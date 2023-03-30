@@ -1,3 +1,4 @@
+//callback(err, product||store||city)
 const products = require('../data/products.json');
 const stores = require('../data/stores.json');
 const cities = require('../data/cities.json');
@@ -8,13 +9,19 @@ const cities = require('../data/cities.json');
 const getProductByName = (name, cb) => {
     setTimeout(() => {
         const product = products.find(product => product.name === name);
-        if (product) {
+        if (product) { //موجود
             cb(undefined, product);
-        } else {
-            err = {message: "Not found", code: 404};
+            //undefind => error(else)
+        } else { //مش موجود
+            err = { message: "Not found", code: 404 };
+            // obj على شكل errorيفضل تعريف ال
+            //object هو inputاذا ال arrayOfObject نفسه productsلانه ال
+            //products => arrayOfObject
+            //one product => object
             cb(err, null);
+            //let it equal null.
         }
-    }, 500)
+    }, 1000)
 }
 
 const getStoreById = (id, cb) => {
@@ -23,10 +30,10 @@ const getStoreById = (id, cb) => {
         if (store) {
             cb(undefined, store);
         } else {
-            err = {message: "Not found", code: 404};
+            err = { message: "Not found", code: 404 };
             cb(err, null);
         }
-    }, 500)
+    }, 1000)
 }
 
 const getCityByName = (name, cb) => {
@@ -35,10 +42,10 @@ const getCityByName = (name, cb) => {
         if (city) {
             cb(undefined, city);
         } else {
-            err = {message: "Not found", code: 404};
+            err = { message: "Not found", code: 404 };
             cb(err, null);
         }
-    }, 500)
+    }, 1000)
 }
 
 
@@ -73,3 +80,13 @@ getProductByName(testProductName, (err, product) => {
 })
 
 // above calls is called "callback hell"
+/** Notes:
+ * 1- callback-hell || Pyramid of Doom:
+ *     - Nested Callbacks => Nested Functions.
+ *     - Complexity Is So High.
+ *     - Hard To Understand The Code.
+ * 
+ * 2- Solution for Callback-Hell || Pyramid of Doom:
+ *      - Promise.
+ *      - 
+ */
