@@ -1,0 +1,87 @@
+Lectures(26-29)
+
+- What's Node.js?
+   1- Node.js is a JavaScript framework built on Chrome's V8 JavaScript engine. 
+   2- Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. 
+   3- Node.js package ecosystem, npm, is the largest ecosystem of open source libraries in the world.
+   4- Node.js is an open-source, cross-platform, JavaScript runtime environment that executes JavaScript code outside a web browser.
+   5- Node.js lets developers use JavaScript to write command line tools and for server-side scripting—running scripts server-side 
+      to produce dynamic web page content before the page is sent to the user's web browser.
+   6- Node.js is a platform built on Chrome's JavaScript runtime for easily building fast and scalable network applications.
+   7- Node.js is single-threaded, non-blocking, asynchronous I/O model that makes it lightweight and efficient, perfect for data-intensive 
+      real-time applications that run across distributed devices.
+
+- Node.js Features:
+   1- Asynchronous and Event Driven.
+   2- Performance: Very Fast.
+   3- Single Threaded but Highly Scalable.
+   4- No Buffering.
+   5- License.
+   6- Uses Google's V8 JavaScript Engine.
+   7- File System Module.
+   8- HTTP Module.
+   9- Events Module.
+   10- Supports a lot of libraries >> Node Package Manager (NPM) is a huge ecosystem of open source libraries.
+   11- Supports both server-side and client-side development.
+   12- Supports async programming. most of programming languages is sync. 
+   13- Real-time applications. >> Socket IO >> Web Sockets >> Like Chatting, Video Conferencing, etc.
+
+- Single-threading vs Multi-threading: (Important)
+   Single-threading is a programming model where only one thread of execution exists in the program.
+   Multi-threading (Parallel) is a programming model where two or more threads of execution can exist within a program.
+
+
+- Node.js Dependencies:
+   1- JS code standards: ECMAScript (ES) It's a standard that defines the core of JavaScript. Others: TypeScript, CoffeeScript, etc.
+                     Example of ES6: let, const, arrow-functions, classes, return-singleLine-Fn etc.
+   2- Module: CommonJS Module: It's specalized for importing and exporting modules in JavaScript.
+   3- JS Engine: V8 Engine (programed in C++) (Sync execution) (Single-Thread => V8 Call Stack) >> It's a JavaScript engine that is used in Google Chrome and in Node.js (Code Execution Manager => Runner).
+        - Sync Executionمسؤؤول عن ال
+   4- Async Handler: Libuv (programmed in C) (Async execution =>> Async handler >> Multi-thread (4 threads) >> Library) >> It's a cross-platform asynchronous I/O library.
+        - Asyncمسؤول عن ادارة العمليات التي تحصل على ال
+        - Node.js is single, and thats in Sync.
+            - In Async -> Multi-Thread. 
+   5- Dependency Manager Tool: npm (Node Package Manager) >> It's a package manager for the JavaScript programming language. >> Dependency manager tool like Composer in PHP.
+        - codeهي اللي بتعمل ال
+        - Dependency Manager Tool: Resposible on the Framerowk. (Manager) For all programming languages.  
+        - Dependency: مكتبة بتيجي مع اللغة - داخلية
+        -  Library||Package: مكتبة خارجية 
+
+- Node.js Server:
+   Node.js has a built-in module called HTTP, which allows Node.js to transfer data over the Hyper Text Transfer Protocol (HTTP).
+   Declaring a server in Node.js is very simple. We just need to use the createServer() method of the HTTP module inside the Node.js application.
+
+Notes:
+- Code library: مجموعة من المهام بتخص شغلة وحدة
+- Project: Modulesعبارة عن مجموعة من ال
+- Important Quetions\\ what is the deffrence between the Library and Framerowk.
+    a) Library:مكتبة صغيرة
+                - سهل انك تنسخها ومن ثم تدمجها مع مشروعك
+    b) Framerowk: عبارة عن مكتبة كبيرة فيها مجموعة من المكاتب الصغيرة
+                - صعب انك تنسخها ومن ثم تدمجها مع مشروعك
+                - الحجم ضخم جدا
+                - وليس العكس Frameworkيجب عليك اضافة مشروعك الى ال (project container)
+- Open-Source: i can use the code and modify on it.
+- cross-platform: means that i can use the framework in many things: 
+    a) backend
+    b) real-time servers
+    c) web-socket
+    d) web-automation
+    e) web-scrabing
+- Real-Time diffre than Request-Response.
+    a) RealTime:
+        1) instant messaging.
+        2) Chatting.
+        3) Notification.
+        - In the same time that app sends a Request, its receives the Response.
+        - Socket between the Request & Response.
+        - في نفس اللحظة
+    b) Request-Response:
+        - The app will wait for the Response after sending the Request.  
+        - No Socket.
+        - مش بنفس اللحظة
+- In Multithread فش اشي بخلص بدري - ممكن يصير عطل - may happen conflict in data
+    - in SingleThread كل اشي ورا بعض - في ضمان - في امان اكثر
+- In programming language: there is something called Code Standards, تاع الكود Syntaxمعايير بتعرف طرق كتابة ال
+    - This code standard, most of programming languages don't differ (Not updated). 
+    - In JS its differ. (Updates) => like (ES) ECMAScript, (TS) TypeScript.
