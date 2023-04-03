@@ -1,18 +1,17 @@
-const http = require('http')//http dependency
-
-const port = 9090
-
+//import server
+const http = require('http');
 
 /**
  * simulate an error
  * and stop the process
  */
-const someError = false;
+const someError = true;
 
-if (someError) {
+// if (someError) {
+if (!someError) {
+    // process.exit(0);
     process.exit(1);
 }
-
 
 /**
  * create Node.js http server with handling multi urls
@@ -20,25 +19,37 @@ if (someError) {
 const server = http.createServer((req, res) => {
     switch (req.url) {
         case '/':
-            res.end(`
-                <html>
-                    <head>
-                        <title>My first page</title>
-                    </head>
-                    <body>
-                        <h1>Welcome to my node application</h1>
-                    </body>
-                </html>
-            `);
+            res.end(
+                `
+               <html>
+               <head>
+                   <title>My Server</title>
+               </head>
+               <body>
+                   <h1 color="red">Welcome to my server</h1>
+                   <hr />
+                   <p>choose path: </p>
+                   <ol>
+                       <li>/user</li>
+                       <li>/admin</li>
+                       <li>/employee</li>
+                   </ol>
+               </body>
+           </html>
+               `
+            );
             break;
         case '/user':
-            res.end('User page, welcome');
+            res.end('welcome user');
             break;
         case '/admin':
-            res.end('Employee good morning');
+            res.end('welcome admin');
             break;
-        default:    // not defined url
-            res.end('Page not found');
+        case '/employee':
+            res.end('welcome employee');
+            break;
+        default:  // not defined url
+            res.end('Page Not Found - 404');
             break;
     }
 });
@@ -46,9 +57,8 @@ const server = http.createServer((req, res) => {
 /**
  * listen to requests
  */
-server.listen(port, () => {
-    console.log(`server is now listening on port ${port}`)
-})
+server.listen(9090, () => console.log(`server is listining at port 9090`));
+
 
 //http://localhost:9090
 
@@ -59,6 +69,6 @@ server.listen(port, () => {
  * 3- Somtimes there will be a problem (Error) maybe: db connection not found, server is broked, full of data, port number is Reserved. 
  *      So you need to check if threre is an error before starts the server.
  *      => if true =>  exit(0) => the operation ends successfully.
- *      => if false => exit(1) number != 0 => stops the server. because of this error. (Simulation)
+ *      => if false => exit(n) (n != 0) => stops the server. because of this error. (Simulation)
  */
 

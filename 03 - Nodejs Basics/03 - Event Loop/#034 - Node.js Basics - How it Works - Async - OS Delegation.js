@@ -1,5 +1,7 @@
 //! You MUST see the lecture.
 //https://www.youtube.com/watch?v=twdy1o8chLU&list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H&index=34
+//! You can use this link to understand more => http://latentflip.com/loupe/
+//! note that website dont supppot ES.
 
 const { pbkdf2 } = require('crypto');
 const { createServer } = require('http');
@@ -28,17 +30,27 @@ lis();
 
 /** Notes:
  * 1- OS Delegation: تفويض نظام التشغيل
- * 2- There is a third place (where executions happens) like call-stack & libuv we can use it to some features in js, its the OS.
- * 3- Server(lis) is neither Sync nor Async. server uses OS not stack & not libuv.
- * 4- Server Steps: V8 - Libuv - OS - OS - Libuv - msg queue - V8. (Event-Loop is the bus)
- * 5- Why??
- *      a- OS عملية قوية جدا وصعبة وكبيرة، اذا النود ما بتقدر تشغلها فبترميها لنظام التشغيل  Serverلان عملية تشغيل ال
- *      b- OSبل من اختصاص ال applicationمش من اختصاص ال serverال
- *      c- ما بتخلص Serverولانه عملية تشغيل ال async libuvحيضل حاجز ثريد  لانه هاي وظيفة ال libuvلو حجز في ال
- *      d- libuvحيضعف ال libuvلو اشتغل على ال
- * 6- Event-Loopمين بنقل العمليات او الكود ؟؟ الي بنقل هو ال 
- * 7- So:
- *      a- V8 for Sync Operations.
- *      b- Libuv for Async Operations.
- *      c- OS for OS Operations like Start a Server.
+ * 2- There is a third place (where executions happens) like V8(callStack) & libuv we can use it to some features in js, its the OS.
+ * 3- Server(lis) is neither Sync nor Async. Server use OS not V8(callStack) & libuv.
+ *          a)  Sync => V8(callStack).
+ *          b)  Async => libuv.
+ *          c)  Server => OS.
+ * 6- Why Server => OS ??
+ *          a) OS عملية قوية جدا وصعبة وكبيرة، اذا النود ما بتقدر تشغلها فبترميها لنظام التشغيل  Serverلان عملية تشغيل ال
+ *          b) OSبل من اختصاص ال applicationمش من اختصاص ال serverال
+ *          c)  ما بتخلص Serverولانه عملية تشغيل ال asyncLibuvحيضل حاجز ثريد طول ما السيرفر شغال لانه هاي وظيفة ال libuvلو حجز في ال
+ *                               3Threads intead of 4 يحتوي على  Libuvبصير ال
+ *          d) libuvحيضعف ال libuvلو اشتغل على ال
+ * 7- Event-Loopمين بنقل العمليات او الكود ؟؟ الي بنقل هو ال 
+ * 8- So:
+ *      a) V8 for Sync Operations.
+ *      b) Libuv for Async Operations.
+ *      c) OS for OS Operations like Start a Server.
+ * 9- Why lis() printed before hash() ?? || why server starts first ??
+ *       - Because Event Loop (Bus) gives the priority to the server first.
+ * 10- Server Steps: V8 - Libuv - OS -
+ *                   Notification - 
+ *                   Event Loop (Bus) Move server From Os to Libuv -
+ *                   Event Loop (Bus) Move server From Libuv to msgQueue -
+ *                   Event Loop (Bus) Move server From msgQueue to V8.
  */
