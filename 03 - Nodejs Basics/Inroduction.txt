@@ -5,7 +5,7 @@ Lectures(26-29)
    2- Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. 
    3- Node.js package ecosystem, npm, is the largest ecosystem of open source libraries in the world.
    4- Node.js is an open-source, cross-platform, JavaScript runtime environment that executes JavaScript code outside a web browser.
-   5- Node.js lets developers use JavaScript to write command line tools and for server-side scripting—running scripts server-side 
+   5- Node.js lets developers use JavaScript to write command line tools and for server-side scripting—running scripts server-side. 
       to produce dynamic web page content before the page is sent to the user's web browser.
    6- Node.js is a platform built on Chrome's JavaScript runtime for easily building fast and scalable network applications.
    7- Node.js is single-threaded, non-blocking, asynchronous I/O model that makes it lightweight and efficient, perfect for data-intensive 
@@ -24,7 +24,7 @@ Lectures(26-29)
    10- Supports a lot of libraries >> Node Package Manager (NPM) is a huge ecosystem of open source libraries.
    11- Supports both server-side and client-side development.
    12- Supports async programming. most of programming languages is sync. 
-   13- Real-time applications. >> Socket IO >> Web Sockets >> Like Chatting, Video Conferencing, etc.
+   13- Real-time applications. >> Socket IO >> Web Sockets: Like Chatting, Video Conferencing, etc.
 
 - Single-threading vs Multi-threading: (Important)
    Single-threading is a programming model where only one thread of execution exists in the program.
@@ -60,7 +60,8 @@ Notes:
     b) Framerowk: عبارة عن مكتبة كبيرة فيها مجموعة من المكاتب الصغيرة
                 - صعب انك تنسخها ومن ثم تدمجها مع مشروعك
                 - الحجم ضخم جدا
-                - وليس العكس Frameworkيجب عليك اضافة مشروعك الى ال (project container)
+                - وليس العكس Frameworkيجب عليك اضافة مشروعك الى ال 
+                - (project container) احتواء
 - Open-Source: i can use the code and modify on it.
 - cross-platform: means that i can use the framework in many things: 
     a) backend
@@ -80,6 +81,7 @@ Notes:
         - The app will wait for the Response after sending the Request.  
         - No Socket.
         - مش بنفس اللحظة
+        
 - In Multithread فش اشي بخلص بدري - ممكن يصير عطل - may happen conflict in data
     - in SingleThread كل اشي ورا بعض - في ضمان - في امان اكثر
 - In programming language: there is something called Code Standards, تاع الكود Syntaxمعايير بتعرف طرق كتابة ال

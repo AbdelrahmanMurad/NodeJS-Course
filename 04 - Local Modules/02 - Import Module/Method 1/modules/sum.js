@@ -1,5 +1,8 @@
-const sum = (a, b) => {
+const summation = (a, b) => {
     return a + b;
 }
 
-module.exports = sum;
+module.exports = summation;
+
+//or
+// module.exports = (a, b) => a + b;

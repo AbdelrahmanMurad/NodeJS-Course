@@ -3,3 +3,6 @@ const multiply = (a, b) => {
 }
 
 module.exports = multiply;
+
+//or
+// module.exports = (a, b) => a * b;

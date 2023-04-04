@@ -1,7 +1,7 @@
 //! You MUST see the lecture. 
 //https://www.youtube.com/watch?v=GUpkkfkxUbc&list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H&index=33
 //! You can use this link to understand more => http://latentflip.com/loupe/
-//! note that website dont supppot ES.
+//! note: that website dont supppot ES.
 //How Asynchrones Execution works in node.js
 
 //Application for Encryption.

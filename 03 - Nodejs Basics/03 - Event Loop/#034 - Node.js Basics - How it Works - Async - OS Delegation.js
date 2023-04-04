@@ -1,7 +1,7 @@
 //! You MUST see the lecture.
 //https://www.youtube.com/watch?v=twdy1o8chLU&list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H&index=34
 //! You can use this link to understand more => http://latentflip.com/loupe/
-//! note that website dont supppot ES.
+//! note: that website dont supppot ES.
 
 const { pbkdf2 } = require('crypto');
 const { createServer } = require('http');

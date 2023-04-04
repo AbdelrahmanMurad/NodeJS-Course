@@ -8,7 +8,8 @@ const multiply = (a, b) => {
 
 // use an object; not array. to be able to use function later by name; not index
 module.exports = {
-    sum,            // key is default = function name
+    // sum,            // key default = function name
+    sum: sum,  // same as sum,
     mp: multiply
-};
+}; 
 
