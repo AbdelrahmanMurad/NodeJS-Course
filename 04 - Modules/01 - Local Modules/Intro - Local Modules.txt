@@ -1,0 +1,49 @@
+1- Name of variable that contains import operation can be different than name of module or name of fn.
+    - مش شرط الأسماء تكون نفس الاسم
+        - name of module.
+        - name of function.
+        - name of import operation.
+
+2- Export Operation is in the same module.
+
+3- Before importing the Module, you need to export the Module. 
+    - Without exporting the Module, you will import a file not  module.
+
+4- If your file name is index.js, automatically import will happen.
+    - أول ملف يتم قراءته indexأي ان ال
+
+5- There is multiple ways to export & import modules in local:
+    1) Single Function module >> a module that exports/exposes only one function to be used..
+        - every fn in one module.
+    2) Multiple Function module >> a module that exports/exposes an object (key-value) containing multiple functions or variables (data).
+        - all fns in one module.
+    3) Sequence Exposure Modules >> a module that exposes/exports object containing functions/variables imported from other modules, or one function or variable that is imported from other modules. 
+        - every modules in one module. [Exposing Chain]
+==================================================================================
+==================================================================================
+1- Single Function module => every fn in one module.
+    - Thats not good. You need to merge them.
+ 
+2- Multiple Function module => all fns in one module.
+    - How to export Module has multi functions??
+        - Use an object; not array. to be able to use function later by name; not index.
+        - Again, you can use array but you will use it by its index not name.
+    - This method has a problem that if the module has 300 fn, and i need just one fn from the module.
+        - Its not possible to use the module just for one function.
+        - so you will use Method 3.
+
+3- Sequence Exposure Modules => every modules in one module.
+    -Merging between Method 1 and 2.
+        - (1): every fn in one module.
+        - (2): all fns in one module.
+        - (3): every modules in one module.
+                - one module importing modules.
+                - exposing chain. 
+==================================================================================
+==================================================================================
+Remember: 
+ - Any File contains:
+        module.export = fnName => Module.
+ - If Folder contains modules:
+        - folder is not a module.
+        - folder is a container of modules.
