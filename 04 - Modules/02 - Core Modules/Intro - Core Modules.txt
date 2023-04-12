@@ -1,0 +1,20 @@
+Core Modules: Type of Modules came with  Node.js Dependencies. بتيجي مع المكتبة
+    - Global & Built-in: 
+            - Variables, Functions and Classes that is Global & Built-in.
+            - Means => imported on all the app.  
+            والكلاسس على مستوى التطبيق/اللغة بشكل كامل fnsانو هاي المتغيرات وال
+            - Because of that, we dont need to import or require.
+            - What the difference between Global & Built-in??
+                - Built-in: Came with js.
+                - Global: Came with Node.js Dependencies.
+            Examples: Class Math - fetch('url') - global - process.
+    
+    
+    - How to Import:
+        - What is the difference between:
+            a) const fs = require('fs');
+            b) const fs = require('./fs');
+            Answer/
+            a=> core modules.
+            b=> local modules, because of (./).
+        - There is @, _ , - => core modules.
