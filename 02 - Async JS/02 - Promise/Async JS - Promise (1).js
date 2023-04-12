@@ -33,6 +33,7 @@
 
 const fs = require("fs"); //fs => famous librarie in js => fs: file system.
 // مش شغالة عندي ليش ؟؟؟
+// output وليس ال Terminalعلى ال run الجواب انو لازم تعمل الها 
 
 // async process.
 // TODO: Question - convert the callback to promise.

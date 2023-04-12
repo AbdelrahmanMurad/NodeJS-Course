@@ -18,3 +18,11 @@ Core Modules: Type of Modules came with  Node.js Dependencies. بتيجي مع �
             a=> core modules.
             b=> local modules, because of (./).
         - There is @, _ , - => core modules.
+
+    - Examples of Core Modules: 
+        1) Event Emitter.
+        2) File System.
+        3) Streams.
+        4) Path.
+        5) http.
+        So on...
