@@ -5,8 +5,8 @@ Intro lecture #38
    4- Module: Component contains functions.
    5- Module component or library or package contains functions.
    6- Types of Modules:
-      1) Core Modules: Node.js Dependencies. بتيجي مع المكتبة
+      01) Local Modules: My Modules. انا بعملهم
+      02) Core Modules: Node.js Dependencies. بتيجي مع المكتبة
             -- هو الأساس 
             - like file system (fs).
-      2) NPM Modules: External packages. مكتبات خارجية
-      3) Local Modules: My Modules. انا بعملهم
+      03) NPM Modules: External packages. مكتبات خارجية
