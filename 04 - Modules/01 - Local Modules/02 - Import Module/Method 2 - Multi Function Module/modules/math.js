@@ -9,8 +9,8 @@ const multiply = (a, b) => {
 /*** How to export Module has multi functions??
  * use an object; not array. to be able to use function later by name; not index.
  * key: value
- * key => Any name.
- * value => Function Name. 
+ *      key => Any name.
+ *      value => Function Name. 
  */
 
 module.exports = {
@@ -24,12 +24,14 @@ module.exports = {
         sum: sum,
         multiply: multiply
      
+        [1) == 2)]
+
     3) keyName != valueName
         summation: sum,
         mp: multiply
 
+        يعني من الاخر، سمي الاسم اللي بدك اياه
     */
     summation: sum,
     mp: multiply
 };
-

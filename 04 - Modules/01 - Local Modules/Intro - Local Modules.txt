@@ -1,4 +1,4 @@
-1- Name of variable that contains import operation can be different than name of module or name of fn.
+1- Name of import operation can be different than name of module or name of fn.
     - مش شرط الأسماء تكون نفس الاسم
         - name of module.
         - name of function.
@@ -7,22 +7,22 @@
 2- Export Operation is in the same module.
 
 3- Before importing the Module, you need to export the Module. 
-    - Without exporting the Module, you will import a file not  module.
+    - Without exporting the Module, you will import a file not module.
 
 4- If your file name is index.js, automatically import will happen.
     - أول ملف يتم قراءته indexأي ان ال
 
 5- There is multiple ways to export & import modules in local:
-    1) Single Function module >> a module that exports/exposes only one function to be used..
-        - every fn in one module.
+    1) Single Function module >> a module that exports/exposes only one function to be used.
+        - each fn in module. [one fn == one module]
     2) Multiple Function module >> a module that exports/exposes an object (key-value) containing multiple functions or variables (data).
-        - all fns in one module.
+        - all fns in one module. [all fns == one modules]
     3) Sequence Exposure Modules >> a module that exposes/exports object containing functions/variables imported from other modules, or one function or variable that is imported from other modules. 
-        - every modules in one module. [Exposing Chain]
+        - every modules in one module. [Exposing Chain] [modules in one module]
 ==================================================================================
 ==================================================================================
-1- Single Function module => every fn in one module.
-    - Thats not good. You need to merge them.
+1- Single Function module => each fn in module.
+    - Thats NOT good. You need to merge them.
  
 2- Multiple Function module => all fns in one module.
     - How to export Module has multi functions??
@@ -34,7 +34,7 @@
 
 3- Sequence Exposure Modules => every modules in one module.
     -Merging between Method 1 and 2.
-        - (1): every fn in one module.
+        - (1): each fn in module.
         - (2): all fns in one module.
         - (3): every modules in one module.
                 - one module importing modules.
@@ -47,3 +47,4 @@ Remember:
  - If Folder contains modules:
         - folder is not a module.
         - folder is a container of modules.
+ - Module should be JS file.

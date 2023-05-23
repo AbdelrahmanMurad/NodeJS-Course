@@ -1,4 +1,4 @@
-Core Modules: Type of Modules came with  Node.js Dependencies. بتيجي مع المكتبة
+Core Modules: Type of Modules came with Node.js Dependencies. بتيجي مع المكتبة
     - Global & Built-in: 
             - Variables, Functions and Classes that is Global & Built-in.
             - Means => imported on all the app.  
@@ -26,3 +26,5 @@ Core Modules: Type of Modules came with  Node.js Dependencies. بتيجي مع �
         4) Path.
         5) http.
         So on...
+        https://www.geeksforgeeks.org/node-js-modules/
+        

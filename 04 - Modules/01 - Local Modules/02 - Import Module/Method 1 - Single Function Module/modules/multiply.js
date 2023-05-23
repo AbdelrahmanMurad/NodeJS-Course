@@ -4,6 +4,6 @@ const multiply = (a, b) => {
 // fn تخزين في 
 module.exports = multiply;
 
-//* or arrow function
+//* or arrow anonymous function
 //* module.exports = (a, b) => a * b;
 // export مباشرة
