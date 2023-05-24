@@ -7,4 +7,3 @@
 7- Anyone can create package.
 8- Anyone can modify a package with consent of its owners.
 9- cmd,terminalيكون من خلال ال npmالتعامل مع ال
-10- 

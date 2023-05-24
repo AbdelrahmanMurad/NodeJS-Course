@@ -1,0 +1,46 @@
+Three things in the project depends on npm:
+    A) node_modules
+        - contain all libraries.
+        - غالبا ما بتعامل معه
+
+    B) package-lock.json
+        - ممعلومات تفصيلية عن المكتبات اللي نزلتها والمكتبات اللي معتمدة عليها
+        - غالبا ما بتعامل معه
+    
+    C) package.json
+        - اسماء المكتبات اللي نزلتها والاصدارات وتفاصيل عن المشروع اللي شغال عليه
+        - التعامل معه غالبا
+        - Package يتعامل مع مشروعك كأنه 
+        - command [npm init]: details about your project.
+               - name: name of the project
+               - version: version of the project
+               - description: description of the project
+               - main: الملف المشغل الرئيسي للمشروع - by default index.js
+                        - index.jsشو بستفيد منها ؟؟ حتى لو غيرت ملف ال
+                        - mainللمشروع ،الملف اللي حيتنفذ هو الاسم اللي موجود في ال run بتفيد لما تعمل 
+               - scripts: scripts==commands
+                    - test: "echo \"Error: no test specified\" && exit 1" 
+                        - you can run [npm test].
+                        - &&: command 1 && command 2.
+                    - you can make your own script(command).
+                    - start: "node index.js" => npm start (script from me)
+               - author: "Murad"
+               - license: ISC
+                    - ترخيص
+               - keywords: [array] 
+                    - npm websiteلو رفعتها على ال
+                    - keywords الناس حيحتاجو يبحثوا عن المكتبة من خلال 
+                    - keywords: ["math", "my", "haha", "etc", "", "", "", "", "", "", "",]
+                    - npm search keyword => in terminal.
+                - repository: link of repo.
+            - All these commands stores in object.
+            - npm install: node_modulesبشيك اذا في اشي ناقص في ال
+                - اذا في نقص بنزل الناقص
+            - Why we push package.json??
+                - Answer\\ when anyone install node_modules, this folder(node_modules) 
+                            will see the packages in file package.json, then install the needs;
+                            and that's because of how big is node_modules, so you can't push it anywhere.  
+            - Why we need npm??
+                1) 
+                2) 
+                3) Provide Packages and infos about it.
