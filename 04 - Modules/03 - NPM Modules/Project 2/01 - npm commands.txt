@@ -1,0 +1,30 @@
+***Before running command [npm install anything], run command [npm init] first. (better)
+
+1- npm init: initiate => setup for npm.
+    result\\ it will asks for details and store it in package.json
+        details: 
+                package name: (project-2)
+                version: (1.0.0)
+                description: first time to run init command
+                entry point: (index.js)
+                test command:
+                git repository:
+                keywords:
+                author:
+                license: (ISC)
+                About to write to G:\abood\IT\Courses\6.Node js\NodeJS-Course\04 - Modules\03 - NPM Modules\Project 2\package.json:
+
+                {
+                "name": "project-2",
+                "version": "1.0.0",
+                "description": "first time to run init command",
+                "main": "index.js",
+                "scripts": {
+                    "test": "echo \"Error: no test specified\" && exit 1"
+                },
+                "author": "",
+                "license": "ISC"
+                }
+
+
+                Is this OK? (yes)

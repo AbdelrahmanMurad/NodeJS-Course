@@ -1,0 +1,10 @@
+1- NPM Modules: External packages. مكتبات خارجية
+2- The responsable of all modules is npm.
+3- NPM Modules is a dependences manager: كلها اللي موجودة على التطبيق dependances مسؤوول عن ادارة ال
+4- مسؤول عن ادارة وتنزيل المكتبات اللي بنزلها من برا
+5- npm Website: https://www.npmjs.com/
+6- Packages: From (Company - Team - One Developer), can be shared on git or npm website.
+7- Anyone can create package.
+8- Anyone can modify a package with consent of its owners.
+9- cmd,terminalيكون من خلال ال npmالتعامل مع ال
+10- 
