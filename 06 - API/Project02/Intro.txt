@@ -1,0 +1,5 @@
+بس الفرق انو بنوضح التالي project01هذا الملف متل ملف :
+
+1- Project 1: server and app in one file.
+2- Project 2: server in file and app in another file.
+من باب الترتيب
