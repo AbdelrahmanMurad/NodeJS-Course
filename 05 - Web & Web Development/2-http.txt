@@ -1,44 +1,3 @@
-What Is Web: https://youtu.be/8sdDswy47LY?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H.
-
-- Why Server is created?? To response.
-- Why Network(internet) is created?? To be a mediator, so the request goes to the Server.
-- Local Network: All devices on one network.
-- Global Network: Devices on Multiple networks.
-- Public(IP-Domain-DNSname) Address: All users can access this web page (Accessible).
-- ACL: An Access Control List (ACL) is a list of permissions associated with a system resource (object).
-        It specifies which users or system processes are granted access to objects, as well as what
-        operations are allowed on given objects. Each entry in a typical ACL specifies a subject
-        and an operation. 
-- ACL: Web Application, Fetching data.
-
-
-*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･
-*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･
-Client-Server Model: https://youtu.be/5PbjHdCHSIQ?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H.
-
-
- - Client Side               ||                      Server Side
-   Send a request                     Front-End   ||   Back-End   ||   Database
-                                                    Recive request
-                                                    SQL from Database
-                                      From Front to Client side
-        UI[inside it data]         
-
-
-*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･
-*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･
-Request-Response Model: https://youtu.be/pK-Iyqgsevw?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H.
-
-
-Request-Response Model:
-        - HTTP-Request: From Client-side to Server-side.
-        - HTTP-Response: From Server-side to Client-side.
-
-Real-Time Model- Instant Model differs from Request-Response Model.
-
-
-*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･
-*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･
 HTTP: https://youtu.be/gV8Jy3eWkLQ?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H.
 
 
@@ -61,18 +20,8 @@ Network Protocol: A set of established rules that specify how to format, send an
 
 *:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･
 *:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･
-Client-Server Model - (Recap): https://youtu.be/uLBNKWBYynI?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H.
-
-
-- Clint[Browser, Application] is a software, Server is a software.
-- UIوهذا هو الصح وليس ال data with format عبارة عن Serverاللي برجع من ال
-- data with format, format like: html, json, xml.
-- this format need to be standard communication format.
-
-
-*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･
-*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･
 HTTP Request - (1): https://youtu.be/aHD340qzCkI?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H.
+
 
 - Structure:
         - URI[https://website/login]: URL[https://website] + URN[/login]
@@ -237,21 +186,6 @@ https://www.semrush.com/blog/http-status-codes/
 
 *:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･
 *:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･
-HTTPS: https://youtu.be/MPJe66xRM04?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H.
-
-In one situation, POST is Safer than GET: 
-        - HTTP, HTTPS
-                - HTTPS: Hyper Text Transfare Secure
-                - HTTPS: HTTP + SSL
-                - SSL: Socure Socket layer تشفير
-                - SSL encode Body.
-- GETاذا استخدمت ال uriعن طريق ال dataكتير ناس بحكو انو بقدر اشوف ال
-        - POSTاذا استخدمت ال DevToolsعن طريق ال dataهذا الكلام صحيح بس برضو بقدر اشوف ال
-        - وهذا هو الصح DevToolsحتى من ال Bodyوهيك بنقدرش نشوف ال Bodyبتم تشفيير ال HTTPSفي حال ال 
-
-
-*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･
-*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･
 HTTP Method - (7) - Other Methods: https://youtu.be/vylGdiFCBqo?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H.
 
 
@@ -279,21 +213,20 @@ HTTP Method - (7) - Other Methods: https://youtu.be/vylGdiFCBqo?list=PLE5Mq0Nw_F
 
 *:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･
 *:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･
-API - (1): https://youtu.be/khWkzFmqw28?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H. مهم جدا جدا جدا
 
+GET >> Select/Retrieve data
+POST >> Insert data
+PUT >> Update all data of an object/entity
+PATCH >> Update partial data of an object/entity
+DELETE >> Delete data
 
-API: Abstract Programming Interface
-        - dataممر لل
-        -  وقتها API وفش واجهات او داتا ترجع بنسميه  Backend على انه  serverمع ال clientعندما يتعامل ال
+Content Type of the request:
+1- form-data >> POST 
+2- form-data/multipart >> POST >> used with file upload
+3- www-url-encoded >> used with put >> it differs from form-data in the way it encodes the data
 
-
-*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･
-*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･
-API - (2): https://youtu.be/7IRsiSP0kxc?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H.
-
-
-
-
-*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･
-*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･
-JSON: https://youtu.be/SRRoj0nqrqM?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H.
+Content Type of the response:
+1- application/json >> used with REST API
+2- text/html >> used with web pages
+3- text/plain >> used with text files
+4- application/xml >> used with XML files

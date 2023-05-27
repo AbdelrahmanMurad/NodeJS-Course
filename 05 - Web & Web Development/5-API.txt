@@ -1,0 +1,55 @@
+API - (1): https://youtu.be/khWkzFmqw28?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H. مهم جدا جدا جدا
+
+
+API: Abstract Programming Interface
+        - مع وجود الداتا،serverيأخذ الواجهات من ال clientفي الأصل: ال
+        - API اسمو web applicationفي نوع اخر من ال
+        - يكون له واجهات خاصة به مثل الموبايل clientهاي الحالة ال
+        - الموبايل ياخذ الداتا فقط من الباك
+        - So, Why its named like this??
+                - Because the server has just data, and the client\mobile has its own UI and takes the data from the server.
+        - dataممر لل
+        -  وقتها API وفش واجهات او داتا ترجع بنسميه  Backend على انه  serverمع ال clientعندما يتعامل ال
+
+- online payment بترجع واجهات متل ال APIفي حالات نادرة جدا، ال
+- web view: api return ui(front)
+
+
+*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･
+*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･
+API - (2): https://youtu.be/7IRsiSP0kxc?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H.
+
+
+- API: 
+        - Rest API:
+                - REST API, RESTFul:
+                        - Same as Backend but differ in return, REST API or RESTFul returns json&xml.
+                                - Backend returns html.
+                        - PHP(The Most), NODE.js(The Most), Python, JAVA
+                        - JSON(The Most), XML, Any Format
+        - SOAP Web Service:
+                - SOAP + HTTP/s
+                        - different than Backend.
+                        - A lot of Protocols
+                        - JAVA
+                        - XML-based
+
+
+What is the difference between SOAP and REST?
+
+Soap Advantages
+SOAP provides the following advantages when compared to REST:
+•    Language, platform, and transport independent (REST requires use of HTTP)
+•    Works well in distributed enterprise environments (REST assumes direct point-to-point communication)
+•    Standardized
+•    Provides significant pre-build extensibility in the form of the WS* standards
+•    Built-in error handling
+•    Automation when used with certain language products
+
+REST Advantages
+REST is easier to use for the most part and is more flexible. It has the following advantages over SOAP:
+•    No expensive tools require to interact with the web service
+•    Smaller learning curve
+•    Efficient (SOAP uses XML for all messages, REST can use smaller message formats)
+•    Fast (no extensive processing required)
+•    Closer to other web technologies in design philosophy
