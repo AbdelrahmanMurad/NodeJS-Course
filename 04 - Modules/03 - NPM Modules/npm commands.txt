@@ -1,5 +1,6 @@
 # initiate npm
 npm init
+npm init -y => insert data from it self.
 
 # install a package on production
 npm install package_name
