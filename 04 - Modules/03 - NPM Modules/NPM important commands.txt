@@ -1,0 +1,94 @@
+// Here are some important NPM commands that you will use often:
+1- npm init >> This command will create a package.json file for your project. This file is important because it contains all the information about your project, including the dependencies that your project needs.
+2- npm install <package_name> >> This command will install a package and add it to the dependencies in the package.json file.
+3- npm install or the shorthand: npm i >> This command will install all the dependencies that are listed in the package.json file.
+4- npm install <package_name> --save-dev >> This command will install a package and add it to the devDependencies in the package.json file.
+5- npm i --save <package_name> >> This command will install a package and add it to the dependencies in the package.json file.
+6- npm install --save-dev >> This command will install all the devDependencies that are listed in the package.json file.
+7- npm install <package_name> --global >> This command will install a package globally on your system.
+8- npm install (i) --global (-g) >> This command will install all the packages that are listed in the package.json file globally on your system.
+// The package installed globally can be used from anywhere on your system. It's like the core modules.
+
+9- npm uninstall (un) <package_name> >> This command will uninstall a package.
+10- npm uninstall (un) >> This command will uninstall all the packages that are listed in the package.json file.
+11- npm update <package_name> >> This command will update a package to the latest version.
+12- npm update >> This command will update all the packages to the latest version.
+13- npm outdated >> This command will list all the packages that are outdated.
+14- npm audit >> This command will audit the packages for known vulnerabilities.
+15- npm audit fix >> This command will fix the vulnerabilities that are found by the audit command.
+16- npm start >> This command will run the start script that is defined in the package.json file.
+17- npm test >> This command will run the test script that is defined in the package.json file.
+18- npm list >> This command will list all the packages that are installed in the current project.
+19- npm list --global >> This command will list all the packages that are installed globally on your system.
+20- npm list --depth=0 >> This command will list all the packages that are installed in the current project, but it will not list the sub-dependencies.
+21- npm view <package_name> >> This command will show the information about a package.
+22- npm install <package_name>@<version> >> This command will install a specific version of a package.
+23- npm install <package_name>@<version> --save >> This command will install a specific version of a package and add it to the dependencies in the package.json file.
+24- npm install <package_name>@<version> --save-dev >> This command will install a specific version of a package and add it to the devDependencies in the package.json file.
+25- npm install <package_name>@<version> --global >> This command will install a specific version of a package globally on your system.
+
+// npm-check-updates package is installed globally and used to update the packages to the latest version.
+// It's different from npm outdated that only lists the outdated packages. npm-check-updates checks the packages that are not the latest version.
+// How to use?
+
+1- npm install -g npm-check-updates >> This command will install the npm-check-updates package globally on your system.
+2- npx ncu >> This command will list all the packages that are outdated. >> This will only list the packages that are not the latest version.
+3- npx ncu -u >> This command will update all the packages to the latest version. >> This only updates the package.json file.
+4- npm install >> This command will install all the packages that are listed in the package.json file. >> This will install the updated packages.
+
+
+// What does "express": "^4.18.2" mean?
+// Well, it depends on how much the changes in the new version of the package occurred.
+// 1- The first number is the major version. It's the version that contains breaking changes.
+// 2- The second number is the minor version. It's the version that contains new features.
+// 3- The third number is the patch version. It's the version that contains bug fixes.
+
+
+// package.json file deals with our project as it is a package. It contains all the information about our project.
+
+{
+  "name": "project-2", // This is the name of our project.
+  "version": "1.0.0", // This is the version of our project.
+  "description": "This is my 2nd project", // This is the description of our project.
+  "main": "index.js", // This is the entry point of our project.
+  "scripts": { // This is the scripts section of our project.
+    "test": "echo \"Error: no test specified\" && exit 1" // This is the test script of our project.
+  },
+  "author": "", // This is the author of our project.
+  "license": "ISC", // This is the license of our project.
+  "keywords": [], // This is the keywords of our project. >> This is used to search for our project.
+  "repository": { // This is the repository section of our project.
+    "type": "git",
+    "url": "git+
+  },
+  "dependencies": { // This is the dependencies section of our project.
+    "express": "^4.18.2",
+    "mongodb": "^5.2.0"
+  },
+  "devDependencies": { // This is the devDependencies section of our project.
+    "debug": "^4.3.4"
+  }
+}
+
+
+// How to use scripts in package.json file?
+// Let's say that we want to run the index.js file in the root directory of our project.
+// We can do that by adding a start script to the scripts section of the package.json file.
+// How to do that?
+// 1- Open the package.json file.
+// 2- Add the start script to the scripts section. >> "start": "node index.js"
+// 3- Save the file.
+// 4- Run the npm start command.
+// 5- The index.js file will run.
+
+// This way is useful when we have a long script that we want to run. We can add it to the scripts section of the package.json file and run it by using the npm run <script_name> command.
+
+
+// How to combine multiple commands in one script?
+// Let's say that we want to run the index.js file in the root directory of our project and we want to run the test.js file in the test directory of our project.
+// We can do that by adding a start script to the scripts section of the package.json file.
+// How to do that?
+// 1- Open the package.json file.
+// 2- Add the start script to the scripts section. >> "start-test": "node index.js && npm test"
+// 3- Save the file.
+// 4- Run the npm start-test command.
