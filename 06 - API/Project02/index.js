@@ -3,6 +3,6 @@ const app = require('./app.js');
 
 const server = http.createServer(app);
 
-const port = 1000;
+const port = 2000;
 
 server.listen(port, console.log(`server ${port} is running now`));

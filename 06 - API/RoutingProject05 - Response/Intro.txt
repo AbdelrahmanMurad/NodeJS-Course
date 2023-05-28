@@ -1,0 +1,5 @@
+Routing - Response: https://youtu.be/IYxdQZTGlhE?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H
+
+Status Code
+  - Success: return default 200
+  - Fail: return default 500

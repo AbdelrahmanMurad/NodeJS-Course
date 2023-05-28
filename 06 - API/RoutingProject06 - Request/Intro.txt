@@ -1,0 +1,11 @@
+Routing - Request: https://youtu.be/ub2phA_v-gI?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H
+
+.get => http method => no body
+
+- To sent post Request you need form (thats for FrontEnd)
+
+- req.query: returns obj contains get parameters.
+- ? in link means end.
+
+
+- see get parameters & get headers in code.
