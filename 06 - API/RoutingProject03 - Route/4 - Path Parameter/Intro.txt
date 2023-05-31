@@ -1,0 +1,24 @@
+Path Parameter (1) :https://youtu.be/vjlS3lVeEdE?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H
+
+We know that we takes the data from the request by 3 ways:
+    1- get parameters.
+    2- get headers.
+    3- post body.
+
+where we send it??
+    1- Path parameters.
+        
+
+Another way to get parameters: (This way called Path Parameter) 
+    - instead of (http://localhost:8000/courses/byId?timezone=UTC&lang=en&id=3), we can get it by this way: 
+      (http://localhost:8000/courses/5?timezone=UTC&lang=en).
+    - we replaced the (/byId) to (/5).
+    - Now you have a problem that you can't do this way, only if you make the (/byId) changeable (not fixed). How??
+     - By making it (/:id) then {req.params.id} not {req.query.id} ##
+
+
+
+
+
+
+---- Path parameters related to Route not HTTP request.

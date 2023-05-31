@@ -6,7 +6,7 @@ const app = express();
 //now we need to create route(link), from where?? from app(express)
 //.get('link','data(callBack(req, res, next))');
 app.get('/student', (req, res, next) => {
-    //*route needs to be start with forward slash /.
+    //*route needs to be start with forward slash /: /student.
     res.send('<h3>Welcome to Student Page</h3>');
     //http://localhost:3000/student
 });
@@ -17,9 +17,9 @@ app.get('/', (req, res, next) => {
 })
 
 /**
- * requst: req for reciving, reception, pickup, read data.
+ * requst: req for read data, reciving, reception, pickup.
  * 
- * response: res for send, post data.
+ * response: res for send data, post.
  *  res.send('htmlContent');
  *    ss
  */

@@ -1,0 +1,8 @@
+Path Parameter (2) :https://youtu.be/-pz7x02g2-U?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H
+
+- Pathييجي في اخر ال Path Parameterمش شرط انو ال
+- المكان في حرية 
+- بنقدر نستخدم اكثر من واحد
+- codeيكون مكتوب بنفس الترتيب المكتوب في ال Routeلازم لازم لازم ال
+    - key&value وليس value لانه بنبعت 
+    - key&value الترتيب ما بفرق

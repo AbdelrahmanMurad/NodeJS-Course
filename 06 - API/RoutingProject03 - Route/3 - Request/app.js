@@ -4,18 +4,18 @@ const app = express();
 
 app.get('/courses', (req, res, next) => {
 
-    //*1. get parameters
+    //*1.how to get parameters (search bar)
 
     console.log(req.query);
     //try: ?timezone=asia$lang=en in the search bar.
-    // it will print in the terminal
+    // it will print it in the terminal
     const lang = req.query.lang;
     console.log(`lang is ${lang}`);
     //dont forget to reconnect => ctrl c.
 
     console.log(`--------------------------------`);
 
-    //*2. get headers
+    //*2.how to get headers
     console.log(req.headers);
     const host = req.headers.host;
     console.log(`host is ${host}`);
