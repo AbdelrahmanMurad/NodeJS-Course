@@ -1,0 +1,5 @@
+ Organize the Code: https://youtu.be/3rN3a5dqctE?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H
+
+- الترتيب مهم جدا 
+- الترتيب ينظم الكود
+- شغل local modules

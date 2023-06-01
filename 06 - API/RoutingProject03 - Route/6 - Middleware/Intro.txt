@@ -1,0 +1,37 @@
+Middleware :https://youtu.be/ebmaKk3b4sQ?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H
+
+- الترجمة => الوسيطة
+- **Middleware** in **Express.js** is a function that is executed between the incoming request and the outgoing response.
+ It can be used to modify the request and response objects, perform tasks such as authentication and validation,
+ and even terminate the request-response cycle. Middleware functions are functions that have access to 
+ the request object (req), the response object (res), and the next middleware function in the 
+ application’s request-response cycle. They are arranged in a chain and are called in sequence. 
+ Each middleware has access to the HTTP request and response for each route (or path) it’s attached to. 
+ In fact, Express itself is compromised wholly of middleware functions.
+
+- Notes:
+  - Its a Component.
+  - When the Request reach the server, The Route will rout(pickup) the Request. 
+    And the callback of the route will return the Response.
+  - Route is a layer. Middleware is also a layer, but you need to use it before Route.
+  - Middleware receives all the requests.
+    - So, its better for the requests go to middlewares before routes.
+  - Middleware deliver request to route.
+  - Middleware contains Preprocessing or Preconditioning Operations.
+    - Preconditioning:  شرط مسبق لازم ينفحص قبل ما يعمل اي عملية
+        - Example: lang is ar||en. 
+            - لو اللغة مبعوتة وبتساوي عربي او انجلش حقق العملية
+            - لو اللغة سواء كانت مبعوتة او مش مبعوتة واللغة مش عربي ولا انجلش لا تحقق العملية
+            - وهذا هو الفحص قبل العملية
+            - "parametersمبعوتة في ال"
+        - Example: authentication & validation.
+  - Middleware comes Before Route.
+  - Middleware comes Before Route.
+  - Middleware comes Before Route.
+  - Middleware comes Before Route.
+  - Middleware comes Before Route. => app.use() comes before app.get(). || app.post(). || ...etc.
+  - You can make more than one middleware.
+  - الترتيب مهم جدا جدا جدا جدا جدا جدا جدا
+  - In Route we dont use next().
+  - In Middleware we need to use next(). (اجباري)
+  - Middlewareممكن تنعمل في ال Routeاي حاجة بتنعمل في ال
