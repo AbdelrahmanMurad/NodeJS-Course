@@ -1,0 +1,22 @@
+Data: https://youtu.be/F7RzqosS208?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H
+
+When you connect to the database, you connect to one collection not all.
+
+The Idea of application:
+    - Group of Books.
+    - Each Book has Reviews.
+    - Each Review has Reviewer.
+
+- There is an id for every data, Why?? To make it unique. (auto generated) (id in MongoDB has unique dataType => objectId)
+
+
+- Developer Standards: عادات برمجية
+    - _id: what does mean the underscore (_)??
+        - معناها انو انا بعطي معلومة للمبرمج اللي بعدي انو ما تقرب عليه
+        - سيبو زي ما هو
+        - Thats what the underscore means.
+
+What is differences between the (_id) & (_book_id)??
+        - in SQL, _id is a public key, and the _book_id is a foreign key.
+        - in NoSQL, there is no relations, so i cant use this feature.
+
