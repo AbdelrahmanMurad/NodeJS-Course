@@ -1,0 +1,16 @@
+Pagination: https://youtu.be/1-U8WVkj3_I?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H
+
+
+row => document 
+
+all documents size => maybe larger than your ram size, its a problem.
+- مش منطقي ارجع 2 مليون كتاب مثلا
+- بدنا نقسم الداتا
+
+Solve: Pagination or Pagin => means: returns the data in parts (page by page).
+
+
+
+controller => books ملاحظة كل الشغل في ال
+ &
+ router => books

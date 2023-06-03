@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "bson": "^5.3.0",
+    "express": "^4.18.2",
+    "http-error": "^0.0.6",
+    "http-errors": "^2.0.0",
+    "install": "^0.13.0",
+    "mongodb": "^5.6.0",
+    "nodemon": "^2.0.22"
+  },
+  "name": "nodejs-course",
+  "version": "1.0.0",
+  "description": "nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbdelrahmanMurad/NodeJS-Course.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AbdelrahmanMurad/NodeJS-Course/issues"
+  },
+  "homepage": "https://github.com/AbdelrahmanMurad/NodeJS-Course#readme"
+}

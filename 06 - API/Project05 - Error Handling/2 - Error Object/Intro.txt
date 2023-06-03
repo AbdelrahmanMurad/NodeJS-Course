@@ -1,0 +1,31 @@
+Error Object: https://youtu.be/eOfQ2vE1w4g?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H
+
+- Storing the error in Object Error, insted of: 
+  
+  res.status(400).json({
+            status: false,
+            message: 'you should send a page number'
+        })
+
+ make it like:
+            1) npm i http-errors
+            2) import http-errors
+            3) cons error = createError(400, 'Id is not valid')
+                    res.status(error.statusCode).json({
+                        status: false,
+                        message: error.message
+                    })
+
+
+--  1- controller => books.js
+    2- controller => books.js
+    3- controller => books.js
+    4- controller => books.js
+    
+===========================
+===========================
+===========================
+TypeError: createError is not a function
+الحل في الأقواس 
+const {createError} = require('http-errors'); => Error 
+const createError = require('http-errors'); => be happy

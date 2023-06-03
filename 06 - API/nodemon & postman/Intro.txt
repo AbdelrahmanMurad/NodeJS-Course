@@ -1,0 +1,19 @@
+nodemon: https://youtu.be/3rmpQQ0452M?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H
+
+
+- When you edit the code, you need to reconnect to the server.
+    - nodemon solve this issue, by making it automatically.
+
+- How it works: 
+    - npm i nodemon
+    - to start the server: nodemon fileName.js
+        - nodemon index.js
+    - another way (better)
+        - store the command in scripts from package.json
+            - "start": "nodemon index.js"
+            - in terminal: npm start
+
+
+===============================================================================
+
+postman: https://youtu.be/-HqXhdOg9Zc?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H

@@ -1,0 +1,8 @@
+Some Common Errors: https://youtu.be/JBuB-M1vi_g?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H
+
+id of books has numbers and letters. => we need to check if its right and make Error Handling. (controller => books)
+&& => (configurations => db.js)
+
+1- controller => books.js
+2- controller => books.js
+3- configurations => db.js ----- app.js

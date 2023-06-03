@@ -1,0 +1,21 @@
+Global Error Handler: https://youtu.be/ngJnWYpQYxk?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H
+
+
+- Errors صارت كلها  controllerالخاصة بال booksصفحة ال
+- try()catch() فوق هيك كمان بدي احط 
+- القصة فارطة، شو الحل ؟؟؟؟
+- Errorsلازم نخلي مكان معين في التطبيق هو المسؤول عن ال
+- routeيعني بدنا نعمل طبقة وتكون بعد ال
+- app.use(4params)
+    - if the first parameter is error, so thats for error handler.
+    - next() => تؤدي على الطبقة
+    - appمكان الطبقة في ال 
+    - الشكل ارتب
+    - next()ما بصلها الا لما نعمل compilerهاي الطبقة ال
+
+
+--  1- app.js
+    2- controller => books.js
+    3- controller => books.js
+    4- controller => books.js
+    5- controller => books.js

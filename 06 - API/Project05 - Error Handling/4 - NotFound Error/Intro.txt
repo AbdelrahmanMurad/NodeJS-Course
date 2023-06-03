@@ -1,0 +1,23 @@
+NotFound Error Handler: https://youtu.be/m9ugOZcfm-4?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H
+
+- not found الشكل اللي بطلع لما نضع رابط مش موجود المفروض يطلع ايرور  
+- اللي بطلع شكل مش لطيف كالتالي: 
+- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Error</title>
+</head>
+<body>
+	<pre>Cannot GET /aaa</pre>
+</body>
+</html>
+
+- not Found بدنا نخليها 
+
+- in app.js, after routes(app)
+- not found يعني حيروح على طبقةroutesطلع من طبقة ال compilerاذا ال
+
+
+
+-- app.js

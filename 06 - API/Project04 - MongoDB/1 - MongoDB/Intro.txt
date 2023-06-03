@@ -1,0 +1,7 @@
+Database Setup: https://youtu.be/GVeyX-Yec5k?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H
+
+Study Chapter 6 from this link: https://www.notion.so/Programming-Frameworks-ca8f349c7f8b4f45aa7840fb72f926cf#39cc4dd515f24bfb865db30a7daf7b23
+
+
+
+- You can use MongoDB as an application, and as a server.

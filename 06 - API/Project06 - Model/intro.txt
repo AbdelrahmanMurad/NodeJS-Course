@@ -1,0 +1,3 @@
+MVC
+
+user <--> middleware <--> routes <--> view <--> controller <--> model <--> DB
