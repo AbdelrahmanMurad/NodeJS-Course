@@ -1,6 +1,0 @@
-Find One: https://youtu.be/9QQs2m6b6vQ?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H
-
-
-=> كل الشغل في 
-controller => books
-routes => books

@@ -1,0 +1,8 @@
+Check Existence: https://youtu.be/cxNudgrJKoM?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H
+
+
+- Idea: التحقق من الوجود
+    Cheacks if the passwords & user existence.
+        - if true: dont make the acount, because it the same data.
+        - if false: make the acount.
+        - See the fn isExist() in the User model.

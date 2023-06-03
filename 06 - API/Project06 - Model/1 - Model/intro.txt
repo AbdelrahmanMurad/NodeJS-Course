@@ -1,0 +1,30 @@
+Model: https://youtu.be/acbGSDSr3EA?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H
+
+MVC:
+- Model: Entitie => class-student, class-teacher, class-course.
+- View: User Interface - UI
+- Controller: Operations
+[user <--> middleware <--> routes <--> view <--> controller <--> model <--> DB]
+
+
+
+Idea of application: user web site
+    - we have 3 collections:
+        - books
+        - reviews
+        - reviewers
+    - the books have reviews, and the reviews comes from reviewers.
+        so, to review we need a reviewer, and thats a user.
+    - the user needs acount.
+        - so, you need one more collection named as users. (thats better)
+        - or you can store the name & password of users in reviewers.
+
+Steps:
+    First: user model
+        - name of file start with uppercase: User.js.
+        - Why?? Because it will be a class.
+        - name of class is name of file. (coding standard عادات برمجية)  
+            1. class name{}
+            2. constructor(){}
+            3. variables inside constructor().
+            4. Make an object for the class.

@@ -1,0 +1,46 @@
+When using the `static` keyword in JavaScript, there are a few rules to keep in mind:
+
+1. `static` can only be used inside a class: The `static` keyword is used to define static methods or properties within a class. It cannot be used outside of a class context.
+
+2. Static methods are not accessible from instances: Static methods are defined on the class itself and cannot be called on instances of the class. They can only be accessed directly from the class itself.
+
+3. Static methods cannot access instance-specific data: Static methods do not have access to the instance-specific data or other non-static members of the class. They can only access other static members or static properties of the class.
+
+4. Static properties can be accessed without instantiation: Static properties are defined on the class itself and can be accessed without creating an instance of the class. They are shared among all instances of the class.
+
+5. Inheritance of static members: When a class extends another class, it inherits the static members (methods and properties) of the parent class. The child class can also override the static methods of the parent class with its own implementation.
+
+Here's an example that demonstrates some of these rules:
+
+```javascript
+class MyClass {
+  static staticMethod() {
+    console.log('This is a static method.');
+  }
+
+  static get staticProperty() {
+    return 'This is a static property.';
+  }
+
+  instanceMethod() {
+    console.log('This is an instance method.');
+  }
+}
+
+// Accessing a static method
+MyClass.staticMethod(); // Output: This is a static method.
+
+// Accessing a static property
+console.log(MyClass.staticProperty); // Output: This is a static property.
+
+// Creating an instance of MyClass
+const myInstance = new MyClass();
+
+// Calling an instance method
+myInstance.instanceMethod(); // Output: This is an instance method.
+
+// Attempting to access static method from an instance (will result in an error)
+myInstance.staticMethod(); // Error: myInstance.staticMethod is not a function
+```
+
+By following these rules, you can effectively use the `static` keyword to define and work with static methods and properties in JavaScript classes.

@@ -1,0 +1,8 @@
+ Error Handling: https://youtu.be/zzkR7_jLCbs?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H
+
+
+
+- modlesفي ال http-errors من المفضل عدم استخدام 
+- we cant use next().
+- so use try()catch().
+- User modelكل الشغل في ال

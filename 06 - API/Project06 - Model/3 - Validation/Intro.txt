@@ -1,0 +1,19 @@
+Validation: https://youtu.be/D8aAtZWvg3U?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H
+
+
+validation is for login and register ...etc (account things)
+
+
+
+- in the code
+    - What is diffrece between save(), validate()??
+        - save() 
+            - create object and save it in database.
+        - validate()
+            - checks the user data (details). 
+            - modelبتحسها مستقلة عن ال
+            - static في حاي الحالة يفضل انو يتم تعريفها 
+            - لانها ثاااااااااابتة
+            - متغيرة saveاما ال
+            - dont forget that static dont take (this).
+            - read the static review file.
