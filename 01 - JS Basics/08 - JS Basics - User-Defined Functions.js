@@ -1,5 +1,5 @@
 /**
- * many ways to define a function
+ * Todo: many ways to define a function
  */
 
 // method 1
@@ -22,18 +22,21 @@ const multiply = (n, m) => {
 // style 2 - for only line block
 const division = (n, m) => n / m;
 
-// style 3
-const reminder = function (n, m) {
-    return n % m;
-}
-
 console.log('multiply = ', multiply(4, 6));
 console.log('division = ', division(4, 6));
-console.log('reminder = ', reminder(4, 6));
 
 ////////////////////////////////
 
 // method 3
+const reminder = function (n, m) {
+    return n % m;
+}
+
+console.log('reminder = ', reminder(4, 6));
+
+////////////////////////////////
+
+// method 4 - fn inside object
 
 const person = {
     firstName: "John",

@@ -1,5 +1,5 @@
 /**
- * 4 methods for declaring variable
+ * Todo: 4 methods for declaring variable
  */
 
 var1 = "Ahmed";

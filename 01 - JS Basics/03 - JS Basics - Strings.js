@@ -1,5 +1,5 @@
 /**
- * 3 method to define a string: single quotes, double quotes, and backticks
+ * Todo: 3 method to define a string: single quotes, double quotes, and backticks
  */
 
 const firstName = 'Ahmed';

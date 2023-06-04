@@ -1,4 +1,4 @@
-// define an object
+//Todo: define an object
 const car = {
     brand: "BMW",
     model: "X5",
@@ -12,10 +12,7 @@ car.country = 'Germany';
 // car['country'] = 'Germany';
 
 console.log(car);
-console.log(car.brand);
-//or
-console.log(car['brand']);
-
+console.log(car.brand); /*or*/ console.log(car['brand']);
 //////////////////
 
 const cars = [
