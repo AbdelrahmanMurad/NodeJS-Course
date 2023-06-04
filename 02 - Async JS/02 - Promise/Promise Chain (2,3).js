@@ -59,52 +59,38 @@ const getCityByName = (name) => {
 const productName = 'Tea Ahmad';
 //name of product then id then name of city.
 
+//1
 getProductByName(productName)
     .then((prod) => {
-
         getStoreById(prod.store_id)
-
             .then((sto) => {
-
                 getCityByName(sto.city)
-
                     .then((cit) => {
-
-                        console.log(cit);
-                        // console.log(cit);
-
+                        console.log(cit.name);
                     })
-
                     .catch(err => console.log(err))
             })
-
             .catch(err => console.log(err))
     })
-
     .catch(err => console.log(err))
 
 // above is like callback hell (promise hell || nested promises)
-// so, the solution is promise chain
+// so, the solution is promise chain => 2
 // like following
 
 getProductByName(productName)
     .then(prod => getStoreById(prod.store_id))
     .then(str => getCityByName(str.city))
-    .then(cit => console.log(cit))
+    .then(cit => console.log(cit.name))
     .catch(err => console.log(err))
-    //this catch handle the error for all the promises.
+//this catch handle the error for all the promises.
 
-// if you want, you can type return.
-// getProductByName(productName)
-//     .then(product => {
-//         return getStoreById(product.store_id);
-//     }).then(store => {
-//         return getCityByName(store.city)
-//     }).then(city => {
-//         console.log(city.name);
-//     }).catch(err => {
-//         console.log(err)
-//     })
+// if you want, you can write return. => 3
+getProductByName(productName)
+    .then(product => { return getStoreById(product.store_id); })
+    .then(store => { return getCityByName(store.city) })
+    .then(city => console.log(city.name))
+    .catch(err => console.log(err))
 
 /**Notes:
  * 1- Promise means => fn().then().catch()

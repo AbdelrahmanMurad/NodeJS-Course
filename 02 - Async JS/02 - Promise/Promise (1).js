@@ -20,11 +20,6 @@
   --- Takes 2 Optional Arguments [Callback For Success Or Failure]
   - catch() => Throws an Error.
 --
- Promise Training
-  We Will Go To The Meeting, Promise Me That We Will Find The 4 Employees
-  .then(We Will Choose Two People)
-  .then(We Will Test Them Then Get One Of Them)
-  .catch(No One Came)
 
   Then    => Promise Is Successfull, Use The Resolved Data
   Catch   => Promise Is Failed, Catch The Error
@@ -68,14 +63,14 @@ console.log(`--------------------------------`);
 /**
  * *Promise
  */
-const products = require("../data/products.json");
+// const products = require("../data/products.json");
 
 const getProductByName = (name) => {
   return new Promise((resolve, reject) => {
-    // const data = fs.readFileSync("../data/products.json");
-    // const json = JSON.parse(data); 
-    // const product = json.find(product => product.name === name);
-    const product = products.find(product => product.name === name);
+    const data = fs.readFileSync("../data/products.json");
+    const json = JSON.parse(data);
+    const product = json.find(product => product.name === name);
+    // const product = products.find(product => product.name === name);
 
     if (product) {
       resolve(product);
@@ -87,17 +82,15 @@ const getProductByName = (name) => {
 }
 
 //run promise
-
-// getProductByName("Cofee Ahmad")
-getProductByName("Tea Ahmad")
+getProductByName("Coffee Star")
   .then(data => console.log(data))
   .catch(err => console.log(err.message));
   // .catch(err => console.log(err.code));
 
 /**Notes: Idea of the 2 patterns we took to solve the async issue.
- * 1- Callback: sent a spy (cb) to return the output from the Async Process.
+ * 1- Callback: sent a spy (cb) to return the output from the Async Process (data).
  * 2- Promise: Promise between Sync & Async - Sync & Asyncاتفاق بين ال.
- *    -- The Promise is: The Async Process give her output to the Sync Process.
+ *    -- The Promise is that Async Process give her output to the Sync Process.
  *    -- So, we dont need to send a spy (cb).
  *    -- Async returns new object of type Promise.
  *    -- Take The code of async and put it inside the return new promise.
