@@ -2,7 +2,7 @@ const fs = require('fs');
 const { promisify } = require('util')
 
 const getProductByName = (name, cb) => {
-    fs.readFile('./data/products.json', 'utf8', (err, data) => {
+    fs.readFile('../data/products.json', 'utf8', (err, data) => {
         if (err) {
             cb(err, null)
         } else {
@@ -22,3 +22,5 @@ findProduct('Tea Ahmad')
     .catch(err => {
         console.log(err.message)
     })
+
+//reading file by .then().catch() without callback fn.

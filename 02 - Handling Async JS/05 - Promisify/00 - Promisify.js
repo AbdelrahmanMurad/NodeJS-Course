@@ -1,7 +1,7 @@
 const { readFile } = require('fs')
 const { promisify } = require('util')
 
-/*
+//1
 readFile('./data.txt', 'utf8', (err, data) => {
     if (err) {
         console.log(err.message);
@@ -9,15 +9,18 @@ readFile('./data.txt', 'utf8', (err, data) => {
     }
 
     console.log(data)
+    console.log('--------------------------------');
 })
-*/
 
-const pReadFile = promisify(readFile);
+//2
+const promisifyReadFile = promisify(readFile);
 
-pReadFile('./data.txt', 'utf8')
+promisifyReadFile('./data.txt', 'utf8')
     .then(data => {
         console.log(data)
     })
     .catch(err => {
         console.log(err.message)
     })
+
+//reading file by .then().catch() without arrow function.
