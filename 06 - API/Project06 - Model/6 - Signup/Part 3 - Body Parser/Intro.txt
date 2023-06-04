@@ -1,0 +1,6 @@
+Body Parser:  https://youtu.be/vc2ISXc6CXA?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H
+
+requestsالا لما اعرف نوع ال requestsما بيعرف ال expressال
+ - types: json, form-data, www-urn-encoded, ...etc
+ - in middleware
+ - Body Parser بقدر اعرف اكثر من 
