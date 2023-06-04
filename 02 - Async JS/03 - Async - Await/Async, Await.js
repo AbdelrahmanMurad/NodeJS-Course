@@ -1,6 +1,6 @@
-/**
- *   Async
-  - Async Before Function Mean This Function Return A Promise
+/**Introduction
+    Async
+  - Async Before Function Mean This Function Return A Promise 
   - Async And Await Help In Creating Asynchronous Promise Behavior With Cleaner Style
 
     Await
@@ -12,11 +12,10 @@
 
     Async & Await With Try, Catch, Finally
 
- */
 //-------------------------------------------------------
-/*
-  we took 2 patterns to handle the async process:
-    1- Callback.
+
+we took 2 patterns to handle the async process:
+    1- Callback. (spying)
     2- Promise To Solve The Callback-Hell.
     3- Async/Await To Create Asynchronous Promise Behavior With Cleaner Style. (More Elegant)
 
@@ -54,7 +53,7 @@ const getUSData = () => {
  * 2- Async code inside Async Function => WRONG.
  * 3- Sync code inside Async Function => Write.
  * 4- So the Block Function of Async Function is Sync. (Block)
- * 5- How to convert Async code to sync? By adding the word await before the code starts.
+ * 5- How to convert Async code to sync? By adding the word await before the line of code starts.
  * 6- So the wrords await: convert the non-block(async) to block(sync).
  * 7- Also you're forced to add await before json() function, Why??.
  *    - Because in js the json() is async. 
@@ -65,7 +64,7 @@ const getUSData = () => {
 const getUSData = async () => {
     // const response = fetch(); // => async 
     // const response = await fetch(); // => sync
-    const response = await fetch('https://datausa.io/api/data?drilldowns=Nation&measures=Population');
+    const response = await fetch('https://datausa.io/api/data?drilldowns=Nation&measures=Population'); // I/O
 
     // error case
     if (response.status !== 200) {
@@ -100,7 +99,8 @@ getUSData()
  *    - Note that the style of code may not contain any types of handling (Sync), but it needs to be an Async,
  *      (this means the operation is Async), just like we learnt.
  * 
- * 6- Features of Async/Await: Helps in keeping the style of code like sync.
- *    (style of Async code = style of Sync code)  
+ * 6- Features of Async/Await: 
+ *          - Helps in keeping the style of code like sync. (style of Async code = style of Sync code)
+ *          - More Elegant.  
  * 7- we can say that calling a function of a promise is the same way as an async/await. (calling the output)
  */
