@@ -15,6 +15,7 @@ if (!someError) {
 
 /**
  * create Node.js http server with handling multi urls
+ * thats from node.js from it self, we will take how to make it by express in future.
  */
 const server = http.createServer((req, res) => {
     switch (req.url) {
@@ -71,4 +72,3 @@ server.listen(9090, () => console.log(`server is listining at port 9090`));
  *      => if true =>  exit(0) => the operation ends successfully.
  *      => if false => exit(n) (n != 0) => stops the server. because of this error. (Simulation)
  */
-

@@ -50,11 +50,11 @@ server.listen(port, () => {
  *     so, when you start the server, it will not pause itself.
  * ---------------------------------------------
  * 3- Steps to create a server:
- *          1- import server by require().
+ *          1- import http server by require().
  *          2- create server by createServer().
  *                  - return something 
  *          3- identify the port server by listen().
  * ---------------------------------------------
- * 4- how to run in terminal for node(bash): node pageName 
- *      -- if name has spaces, use "". 
+ * 4- how to run in terminal for node(bash): node pageName.js
+ *      -- if name has spaces, use "".
  */

@@ -2,7 +2,7 @@ Lectures(28-30)
 
 - What's Node.js? 
    1- Node.js is a JavaScript framework built on Chrome's V8 JavaScript engine. 
-             its not a framework, but you need to stick with this mistaken information for the teacher. 
+             (its not a framework, but you need to stick with this mistaken information for the teacher)
    2- Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. 
    3- Node.js package ecosystem, npm, is the largest ecosystem of open source libraries in the world.
    4- Node.js is an open-source, cross-platform, JavaScript runtime environment that executes JavaScript code outside a web browser.
@@ -28,8 +28,8 @@ Lectures(28-30)
    13- Real-time applications. >> Socket IO >> Web Sockets: Like Chatting, Video Conferencing, etc.
 
 - Single-threading vs Multi-threading: (Important)
-   Single-threading is a programming model where only one thread of execution exists in the program.
-   Multi-threading (Parallel) is a programming model where two or more threads of execution can exist within a program.
+   - Single-threading is a programming model where only one thread of execution exists in the program.
+   - Multi-threading (Parallel) is a programming model where two or more threads of execution can exist within a program. (at the same time)
 
 
 - Node.js Dependencies:
@@ -37,7 +37,7 @@ Lectures(28-30)
                      Example of ES6: let, const, arrow-functions, classes, return-singleLine-Fn etc.
    2- Module: CommonJS Module: It's specalized for importing and exporting modules in JavaScript.
    3- JS Engine: V8 Engine (programed in C++) (Sync execution) (Single-Thread => V8 Call Stack) >> It's a JavaScript engine that is used in Google Chrome and in Node.js (Code Execution Manager => Runner).
-        - Sync Executionمسؤؤول عن ال
+        - Sync Executionمسؤؤول عن الV8 Call Stack 
    4- Async Handler: Libuv (programmed in C) (Async execution =>> Async handler >> Multi-thread (4 threads) >> Library) >> It's a cross-platform asynchronous I/O library.
         - Asyncمسؤول عن ادارة العمليات التي تحصل على ال
         - Node.js is single, and thats in Sync.
@@ -46,11 +46,12 @@ Lectures(28-30)
         - codeهي اللي بتعمل ال
         - Dependency Manager Tool: Resposible on the Framerowk. (Manager) For all programming languages.  
         - Dependency: مكتبة بتيجي مع اللغة - داخلية
+            D => د
         -  Library||Package: مكتبة خارجية 
 
 - Node.js Server:
-   Node.js has a built-in module called HTTP, which allows Node.js to transfer data over the Hyper Text Transfer Protocol (HTTP).
-   Declaring a server in Node.js is very simple. We just need to use the createServer() method of the HTTP module inside the Node.js application.
+   - Node.js has a built-in module called HTTP, which allows Node.js to transfer data over the HTTP => Hyper Text Transfer Protocol.
+   - Declaring a server in Node.js is very simple. We just need to use the createServer() method of the HTTP module inside the Node.js application.
 
 Notes:
 - Code library: مجموعة من المهام بتخص شغلة وحدة
