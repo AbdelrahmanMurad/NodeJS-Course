@@ -1,5 +1,5 @@
 //! You MUST see the lecture.
-// https://www.youtube.com/watch?v=cYRTLYctD-Q&list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H&index=32
+// https://youtu.be/cYRTLYctD-Q?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H
 //! You can use this link to understand more => http://latentflip.com/loupe/
 //! note: that website dont supppot ES.
 //How Synchrones Execution works in node.js
@@ -18,6 +18,8 @@ console.log('forth line');
  *     - After Execution The Process(calling stack) will be Empty.
  */
 
+//V8 Engine => V8 Call Stack => Single Threded => Sync => After Process(Calling Stack) => Empty
+//Libuv Engine => Async
 
 console.log("--------------------------");
 
