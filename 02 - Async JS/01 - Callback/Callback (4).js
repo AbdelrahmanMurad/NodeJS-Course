@@ -1,5 +1,5 @@
 // Callback Hell || Pyramid Of Doom هرم الموت  => nested callbacks, nested functions.
-//TODO: Example: we want to print the product Tea Ahmad and its store with the city. How?? answer is: by callback hell.
+//TODO: Example: we want to print the Product Tea Ahmad and its Store with the City. How?? answer is: by callback hell.
 // we want all details about product Tea Ahmad.
 
 const products = require('../data/products.json');
@@ -16,19 +16,19 @@ const cities = require('../data/cities.json');
 const getProductByName = (name, cb) => {
     setTimeout(() => {
         cb(products.find((prod) => prod.name === name));
-    }, 5000)
+    }, 2000)
 }
 
 const getStoreById = (id, cb) => {
     setTimeout(() => {
         cb(stores.find((sto) => sto.id === id));
-    }, 5000)
+    }, 2000)
 }
 
 const getCityByName = (name, cb) => {
     setTimeout(() => {
         cb(cities.find((cit) => cit.name === name));
-    }, 5000)
+    }, 2000)
 }
 
 
@@ -51,13 +51,24 @@ getProductByName(productName, (prod) => {
 });
 
 //TODO: if we want to print just the city of product Tea Ahmad, How?? By callback hell.
+
+getProductByName(productName, (p) => {
+    id = p.store_id;
+    getStoreById(id, (s) => {
+        city = s.city;
+        getCityByName(city, (c) => {
+            console.log(c.name);
+            console.log(c);
+        });
+    })
+});
+
+// or
+
 // getProductByName(productName, (p) => {
-//     id = p.store_id;
-//     getStoreById(id, (s) => {
-//         city = s.city;
-//         getCityByName(city, (c) => {
+//     getStoreById(p.store_id, (s) => {
+//         getCityByName(s.city, (c) => {
 //             console.log(c.name);
-//             console.log(c);
-//         });
+//         })
 //     })
-// });
+// })

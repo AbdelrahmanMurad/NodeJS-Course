@@ -4,12 +4,12 @@ const products = require('../data/products.json');
 const getProductByName = (name, cb) => {
     setTimeout(() => {
         // const product = products.find((productArray) => productArray.name === name);
-        // cb(product);
+        // cb(product); ======> or
         cb(products.find((productArray) => productArray.name === name));
+        //(array) => array.name === name 
     }, 3000);
 }
 
-// callback function => handleGetProductByName (cb)
 /**
  * ?Passing the callback as an argument has two ways:
  *    a) as a variable. 
@@ -26,21 +26,28 @@ const handleGetProductByName = (prod) => {
 const t = `Tea Ahmad`;
 // const c = `Coffee Star`;
 getProductByName(t, handleGetProductByName);
+//handleGetProductByName was the callback function
 
 //?b) Passing the callback as an anonymous function: the declaration of the callback function.
-getProductByName(t, (prod) => {
+// getProductByName(t, (prod) => {
+//     console.log(prod);
+//     console.log(`name:`, prod.name);
+//     console.log(`price:`, prod.price);
+//     console.log(`discount:`, prod.discount);
+//     console.log(`id:`, prod.store_id);
+// });
+
+getProductByName('Coffee Star', (prod) => {
     console.log(prod);
-    console.log(`name:`, prod.name);
-    console.log(`price:`, prod.price);
-    console.log(`discount:`, prod.discount);
-    console.log(`id:`, prod.store_id);
+    console.log(prod.name);
+    console.log(prod.price);
+    console.log(prod.discount);
+    console.log(prod.store_id);
 });
 
 
 /** Notes: just in callback.
- * 1- To (solve-handle) the Async problem: we need a callback fn (spy). 
- *  -- We send this spy to the Async process, to return the output(data).
- * 2- const product = products.find((prod) => prod.name === name); => output
- *    cb(product); => cb(outputOfProduct);
- * 3- So, the callback fn will return the output of first parameter. 
+ * 1- To solve/handle the Async problem: we need a callback fn (spy). 
+ *  -- We send this spy to the Async process(or data), to return the output(data).
+ * 2- So, the callback fn will return the output of first parameter.
  */

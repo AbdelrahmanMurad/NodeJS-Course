@@ -11,7 +11,7 @@ const getProductByName = (name, cb) => {
         const product = products.find(product => product.name === name);
         if (product) { //موجود
             cb(undefined, product);
-            //undefind => error(else)
+            //undefind => error => go to else
         } else { //مش موجود
             err = { message: "Not found", code: 404 };
             // obj على شكل errorيفضل تعريف ال

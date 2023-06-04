@@ -14,8 +14,6 @@ let name = `Tea Ahmad`;
 let id = 1;
 let nameOfCity = `Gaza`;
 
-
-
 /**
  *  async processes => getProductByName - (1)
  */
@@ -42,8 +40,6 @@ getProductByName(name, handleGetProductByName);
 getProductByName(name, (p) => console.log(p));
 
 
-
-
 /**
  *  async processes => getStoreById - (2)
  */
@@ -53,16 +49,14 @@ const getStoreById = (id, cb) => {
     }, 5000)
 }
 
-
 //a) cb as a variable.
 handleGetStoreById = (s) => {
     console.log(s);
 }
 getStoreById(id, handleGetStoreById);
+
 //b) cb as anonymous function.
 getStoreById(id, (s) => console.log(s));
-
-
 
 
 /**
@@ -74,11 +68,11 @@ const getCityByName = (name, cb) => {
     }, 5000)
 }
 
-
 //a) cb as a variable.
 handleGetCityByName = (c) => {
     console.log(c);
 }
 getCityByName(nameOfCity, handleGetCityByName);
+
 //b) cb as anonymous function.
 getCityByName(nameOfCity, (c) => console.log(c));

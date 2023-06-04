@@ -1,13 +1,13 @@
 /*
   - What Is Callback
-  - we will take callback hell later.
+  - we will take callback-Hell later.
 
   What Is Callback
   - Its A Function That Is Passed Into Another One As An Argument To Be Executed Later.
   - Example (1) // getProductByName = (name, cb) {code}
   --- [A] (cb) is a function that passed into (getProductByName) function as an argument to be executed later.
   - Example (2) // getProductByName = (name, cb) {code}
-  --- [A] Read Note 5.
+  --- [A] Read Note 5. ====> onClick() is async. 
 */
 
 const computeTax = (amount, taxPercent) => {

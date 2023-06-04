@@ -12,7 +12,7 @@ const getProductByName = (name) => {
     // timer for simulating an async
     setTimeout(() => {
         // const product = products.find(prod => prod.name === name);
-        // return product; or 
+        // return product; =========> or 
         return products.find(prod => prod.name === name);
         /*prod.name === name 
         parameterاسمه يساوي اسم ال arrayلما البرودكت اللي في ال
@@ -27,7 +27,7 @@ console.log(product); //not Tea Ahmad => its undefind, why?? read the notes.
 
 /** Notes:
  * 1- find(): fn from array. like forEach (loop).
- * 2- Why not Tea Ahmed,its undefind ?? 
+ * 2- Why the result is not Tea Ahmed, undefind ?? 
  *      a) Asyncاي ما بشوفها وهذا في حالة ال dataالمبرمج والبرنامج بقدرش يوصل لل
  *      b) Asyncمشكلة التعامل مع ال
  *          1- يخلص Asyncبنعرفش وقتيش ال.
@@ -38,7 +38,7 @@ console.log(product); //not Tea Ahmad => its undefind, why?? read the notes.
  *      C- async/await.
  *      -- Handle||Process معالجة
  * 5- getProductByName: The Fn is Synchronous, and we used the setTimeout() function
- *    in it to be an Example of Asynchronous.
+ *    on it to be an Example of Asynchronous.
  */
 
 /** What is the deference between these two code snippets??
