@@ -1,5 +1,5 @@
 //! You MUST see the lecture. 
-//https://www.youtube.com/watch?v=GUpkkfkxUbc&list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H&index=33
+//https://youtu.be/GUpkkfkxUbc?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H
 //! You can use this link to understand more => http://latentflip.com/loupe/
 //! note: that website dont supppot ES.
 //How Asynchrones Execution works in node.js
@@ -29,7 +29,7 @@ hash();
 hash();
 hash();
 // hash(); // that will wait & and the execution time is so far.
-
+// thats because Event Loop has 4 Multithreaded. hash() number five will wait unit the event loop be empty.
 
 /** Notes:
  * 1- As we said, Node.js is Synchronous - Sigle Thread - V8 Engine: V8 call stack.
