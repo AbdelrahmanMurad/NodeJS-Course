@@ -1,0 +1,47 @@
+MVC: https://youtu.be/-xKVqzsxm8A?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H
+
+
+- Model–view–controller: Software architectural pattern
+- Model–view–controller (MVC) is a software design pattern commonly used for developing user interfaces 
+  that divides the related program logic into three interconnected elements. This is done to separate 
+  internal representations of information from the ways information is presented to and accepted from the user.
+- Traditionally used for desktop graphical user interfaces (GUIs), this pattern became popular for designing web
+  applications. Popular programming languages have MVC frameworks that facilitate the implementation of the pattern.
+    - Model: Entitie => class-student, class-teacher, class-course.
+    - View: User Interface - UI
+    - Controller: Operations
+[user <--> middleware <--> routes <--> view <--> controller <--> model <--> DB]
+
+- From Model you can deal with database.
+- From View 
+- From Controller
+
+
+How does it work to get database??
+    1. User sees the View, the request goes to the Controller.
+    2. The operation is on the Controller, and it needs to get database from the Model, because the Model is resposible
+       on getting database from the place where it is, Then from the Model to the Controller to the View. 
+    - So, the Controller is a link between the Model and the View.
+    - The View is JSON response.
+    - The response is from the Controller.
+
+- انا حر في التقسيمة وممكن اغير الاسامي
+
+
+Software Design: كيفية تقسيم الملفات
+    - Design pattern.
+    - Software design is the process of envisioning and defining software solutions to
+      one or more sets of problems. It is a mechanism to transform user requirements into 
+      some suitable form, which helps the programmer in software coding and implementation. 
+      It deals with representing the client’s requirement, as described in 
+      SRS (Software Requirement Specification) document, into a form that is 
+      easily implementable using programming language.
+      - تصميم البرامج هو عملية تصور وتحديد حلول برمجية لمجموعة واحدة أو أكثر من المشاكل. إنها آلية لتحويل متطلبات المستخدم إلى شكل مناسب ، مما يساعد المبرمج في تشفير البرامج وتنفيذها. إنه يتعامل مع تمثيل متطلبات العميل ، كما هو موضح في مستند (مواصفات متطلبات البرنامج) ، في نموذج يمكن تنفيذه بسهولة باستخدام لغة البرمجة. 
+      - مرحلة التصميم لبرنامج هي عملية تحليلية لمتطلبات البرنامج لاختيار و بناء هيكل البرنامج و أجزاءه و كيفية ترابطها مع بعضها البعض، ينتج عن ذلك مجموعة من الملفات و النماذج و الرسومات البيانية التي يمكن منها برمجة وكتابة شيفرة البرنامج “بالكامل”.
+
+Design System: 
+    - نظام التصميم هو عبارة عن مجموعة من العناصر (Components) التي يمكنك دمجها بعدة طرق للحصول على شكل معين، وهو الذي يساعد الشركات على ادارة التصميم الخاص بها عند التوسع والتضخم.
+https://hussam3bd.com/%d9%85%d8%a7-%d9%87%d9%88-%d9%86%d8%b8%d8%a7%d9%85-%d8%a7%d9%84%d8%aa%d8%b5%d9%85%d9%8a%d9%85-design-system-%d9%88%d9%85%d8%aa%d9%89-%d9%8a%d8%ac%d8%a8-%d8%a3%d9%86-%d8%a7%d8%b3%d8%aa%d8%ae%d8%af/
+
+
+

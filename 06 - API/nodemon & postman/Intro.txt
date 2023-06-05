@@ -13,7 +13,6 @@ nodemon: https://youtu.be/3rmpQQ0452M?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H
             - "start": "nodemon index.js"
             - in terminal: npm start
 
-
 ===============================================================================
 
 postman: https://youtu.be/-HqXhdOg9Zc?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H

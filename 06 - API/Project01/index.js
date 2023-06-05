@@ -10,4 +10,3 @@ const server = http.createServer(app);// => start application
 const port = 1000;
 
 server.listen(port, () => console.log(`server ${port} is running now`));
-
