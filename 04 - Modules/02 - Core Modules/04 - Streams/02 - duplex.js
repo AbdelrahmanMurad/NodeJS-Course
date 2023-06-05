@@ -6,6 +6,7 @@
  *      - Real-Time: One Side. (In the same Time)
  *              - Sneder & Receiver in the same circle.
  *              - connection still opened.
+ *              - WhatsApp, etc...
  * - Real-Time like chatting application.
  * - Socket => duplex stream. 
  * - Socket used for real-time at most.

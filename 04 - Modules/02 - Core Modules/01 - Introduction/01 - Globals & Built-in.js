@@ -13,20 +13,21 @@
 //1
 const absVal = Math.abs(-8);
 console.log(absVal);
-console.log("------------------fetch------------------");
+
 //2
+console.log("------------------fetch------------------");
 const apiResponse = fetch('some_url');
 console.log(apiResponse);
-console.log("------------------global------------------");
 
 //3
+console.log("------------------global------------------");
 console.log(global)
 console.log("------------------global.car------------------");
 global.car = 'delorean';
 console.log(global.car)
-console.log("------------------env------------------");
 
 //4
+console.log("------------------env------------------");
 //env => information about your environment(laptop).
 console.log(process.env);
 console.log("------------------argv------------------");

@@ -14,7 +14,7 @@
  * read & write works togther because you need to transform data from file to file.
  */
 
-// an example for transform data from file to file
+// An example for transform data from file to file
 // delete the file output text you have. because createWriteStream will create one.
 
 const { createReadStream, createWriteStream } = require('fs')
@@ -24,7 +24,6 @@ const readStream = createReadStream('./data/input.txt')
 const writeStream = createWriteStream('./data/output.txt')
 
 // غلط انو اخلي العمليتين هدول يشتغلوا لحالهم، لازم مع بعض
-
 //pipe بتخلينا نشغل العمليات مع بعض
 //pipe انبوبة
 readStream.pipe(writeStream)
@@ -32,4 +31,5 @@ readStream.pipe(writeStream)
 
 //Note: Transform means same data in all sides.
 
-// another way: fs.
+// another way: fs. 
+// code...

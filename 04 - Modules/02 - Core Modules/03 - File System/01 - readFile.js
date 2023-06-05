@@ -1,3 +1,4 @@
+//Restrutring
 const { readFile, readFileSync } = require('fs');
 
 //TODO: Asynchronous Reading File VS Synchronous Reading File

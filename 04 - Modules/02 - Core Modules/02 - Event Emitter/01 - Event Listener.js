@@ -2,10 +2,10 @@
  * Event Emitter => حدث يحدث والبرنامج مش شايفه، بتصل اشارة الى البرنامج
  *  باعث الحدث
  *  callStackيعني ما بتصير في ال
- *  example => onClick()
+ *  example => onClick() 
  * ------------------------
  * What is the deference between Event and Asynchronous??
- *  Asynchronous ->  اول ما تنتهي العملية Asyn الاشارة بتصل للبرنامج انو في عملية 
+ *  Asynchronous ->  اول ما تنتهي العملية Async الاشارة بتصل للبرنامج انو في عملية 
  *  Event -> اول ما تبدا العملية Event الاشارة بتصل للبرنامج انو في عملية 
  * ------------------------
  * Event Listener 
