@@ -17,16 +17,19 @@ module.exports = {
     /* There is 3 ways.
 
     1) keyName default = functionName 
+        .e.g. 
         sum,
         multiply
 
     2) keyName = valueName
+        .e.g. 
         sum: sum,
         multiply: multiply
      
         [1) == 2)]
 
     3) keyName != valueName
+        .e.g. 
         summation: sum,
         mp: multiply
 

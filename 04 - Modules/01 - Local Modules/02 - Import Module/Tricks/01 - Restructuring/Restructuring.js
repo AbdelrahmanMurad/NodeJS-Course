@@ -1,7 +1,5 @@
-// const math = require('./modules/') //Normal way
-
 //? Restructure
-const { sum, multiply } = require('./modules')
+const { sum, multiply } = require('./modules') //# index.js
 // or
 // const { sum } = require('./modules/')
 // const { multiply } = require('./modules/')

@@ -11,8 +11,8 @@ module.exports = {
 //or 1 & 2
 module.exports = {
     //1
-    sum: require('./sum'),
-    multiply: require('./multiply')
+    sum: require('./math/sum'),
+    multiply: require('./math/multiply')
     //2
     // sum: (a,b)=>a+b,
     // multiply: (a,b)=>a*b

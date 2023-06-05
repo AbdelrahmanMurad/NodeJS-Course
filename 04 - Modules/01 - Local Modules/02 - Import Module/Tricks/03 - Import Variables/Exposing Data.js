@@ -8,4 +8,4 @@ console.log('db host is', dbConfig.host)
 
 // المقصد من هذا الفيديو
 // لاي حاجة Exposing/Exportانو انا ممكن اعمل
-// Module ممكن اخليها  JSONيعني الداتا اللي ممكن تكون 
+// Module ممكن اخليها JSONيعني الداتا اللي ممكن تكون 
