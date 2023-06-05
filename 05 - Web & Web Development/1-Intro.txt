@@ -34,7 +34,7 @@ Request-Response Model:
         - HTTP-Request: From Client-side to Server-side.
         - HTTP-Response: From Server-side to Client-side.
 
-Real-Time Model- Instant Model differs from Request-Response Model.
+Real-Time Model - Instant Model differs from Request-Response Model.
 
 
 *:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･

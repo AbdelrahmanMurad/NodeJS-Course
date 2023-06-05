@@ -59,10 +59,10 @@ HTTP Request - (2): https://youtu.be/emBILkt8thg?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfU
 HTTP Response: https://youtu.be/bd5Clor-uus?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H.
 
 
-- Structure: (no uri)
-        - headers: 
+- Structure: (no URI)
+        - Headers: 
                 - content-type: body forms
-        - response-body:
+        - Response-Body:
                 - body forms: {in content-type from headers}
                         - json, xml, plaidtext, html(الأشهر) => Standard Communication Language. (مهمة) 
 
@@ -74,7 +74,7 @@ HTTP Method - (1): https://youtu.be/bGf1An-gbEw?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfUR
 
 - Method: 
         - GET:
-                - Data in uri: Query String in link: http://www.google.com?search_key=coffe&price=40. (Auto)
+                - Data in URI: Query String in link: http://www.google.com?search_key=coffe&price=40. (Auto)
                         - search_key=coffe&price=40 this is a Query String.
         - POST:
                 - Body. (Auto)
@@ -191,11 +191,11 @@ HTTP Method - (7) - Other Methods: https://youtu.be/vylGdiFCBqo?list=PLE5Mq0Nw_F
 
 - Methods:
         - GET: select
-        - POST: add, update, delete, sen. data
+        - POST: add, update, delete => (sensitive data)
                 - PUT & PATCH & DELETE is POST.
         OR
         - GET: select
-        - POST: add, sen. data
+        - POST: add => (sensitive data)
         - PUT:  update (التعديل على معلومات كاملة)
         - PATCH: update (facebook) (التعديل على جزء بسيط من المعلومات)
         - DELETE: delete 
@@ -213,6 +213,7 @@ HTTP Method - (7) - Other Methods: https://youtu.be/vylGdiFCBqo?list=PLE5Mq0Nw_F
 
 *:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･
 *:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･
+Notes:
 
 GET >> Select/Retrieve data
 POST >> Insert data
@@ -223,7 +224,7 @@ DELETE >> Delete data
 Content Type of the request:
 1- form-data >> POST 
 2- form-data/multipart >> POST >> used with file upload
-3- www-url-encoded >> used with put >> it differs from form-data in the way it encodes the data
+3- www-url-encoded >> PUT >> it differs from form-data in the way it encodes the data
 
 Content Type of the response:
 1- application/json >> used with REST API

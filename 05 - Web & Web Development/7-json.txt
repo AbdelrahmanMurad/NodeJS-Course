@@ -5,12 +5,17 @@ JSON: https://youtu.be/SRRoj0nqrqM?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H.
 
 
 JSON ARRAY STRUCTURE:
+
+1
 [ ] //Empty JSON array
 
+2
 [ 0, 1, 2, 3, 4, 5]
 
+3
 [ “StringValue”, 10, 20.13, true, null ]
 
+4
 [
  {
    “Name” : “Nested Object”
@@ -18,16 +23,20 @@ JSON ARRAY STRUCTURE:
  [ 10, 20, true, 40, “Nested Array” ]
 ]
 
+
 JSON OBJECT:
+1
 {
   “Name” : “Object Name”
 }
 
+2
 {
   “Name” : “Object Name”,
   “Value” : 10
 }
 
+3
 {
   “Name” : “Object Name”,
   “Value” : 10,
@@ -36,6 +45,7 @@ JSON OBJECT:
   }
 }
 
+4
 {
   “Name” : “Object Name”,
   “Value” : 10,
