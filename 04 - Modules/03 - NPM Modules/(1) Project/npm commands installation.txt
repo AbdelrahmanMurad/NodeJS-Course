@@ -1,12 +1,13 @@
 1- npm install cors. 
-    result\\ 1 folder and 2 files:  - node_modules: contain all libraries.
-                                        - غالبا ما بتعامل معه
-                                    - package.json: related infos(dependances and its versions) to npm. 
-                                        - اسماء المكتبات اللي نزلتها والاصدارات وتفاصيل عن المشروع اللي شغال عليه
-                                        - التعامل معه غالبا
-                                    - package-lock.json: related infos about dependencies you installed, and another details. 
-                                        - ممعلومات تفصيلية عن المكتبات اللي نزلتها والمكتبات اللي معتمدة عليها
-                                        - غالبا ما بتعامل معه
+    result\\ 1 folder and 2 files:  
+            - node_modules: contain all libraries. (folder)
+                - غالبا ما بتعامل معه
+            - package.json: related infos(dependances and its versions) to npm. (file)
+                - اسماء المكتبات اللي نزلتها والاصدارات وتفاصيل عن المشروع اللي شغال عليه
+                - التعامل معه غالبا
+            - package-lock.json: related infos about dependencies you installed, and another details. (file)
+                - ممعلومات تفصيلية عن المكتبات اللي نزلتها والمكتبات اللي معتمدة عليها
+                - غالبا ما بتعامل معه
 
 2- npm install express.
     result\\  added 57 packages, and audited 61 packages in 6s. (in terminal) 

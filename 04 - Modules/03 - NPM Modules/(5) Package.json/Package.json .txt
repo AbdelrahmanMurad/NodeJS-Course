@@ -21,9 +21,9 @@ Three things in the project depends on npm:
                - scripts: scripts==commands
                     - test: "echo \"Error: no test specified\" && exit 1" 
                         - you can run [npm test].
-                        - &&: command 1 && command 2.
+                        - && means: command 1 && command 2.
                     - you can make your own script(command).
-                    - start: "node index.js" => npm start (script from me)
+                       - start: "node index.js" => npm start (script from me)
                - author: "Murad"
                - license: ISC
                     - ترخيص
@@ -40,7 +40,3 @@ Three things in the project depends on npm:
                 - Answer\\ when anyone install node_modules, this folder(node_modules) 
                             will see the packages in file package.json, then install the needs;
                             and that's because of how big is node_modules, so you can't push it anywhere.  
-            - Why we need npm??
-                1) 
-                2) 
-                3) Provide Packages and infos about it.

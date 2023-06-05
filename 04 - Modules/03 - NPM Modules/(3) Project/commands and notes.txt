@@ -4,7 +4,7 @@ npm i cors
 
 NOTES:
     - There is two environments, local and production.
-        - local environment: named as development environment, for devs only, clients\users can`t see it. (will not be pushed into production environment)
+        - local environment: named as development environment, for devs only. (clients\users can`t see it) (will not be pushed into production environment)
         - production environment: the server that devs push on it applications. (clients\users can see it)
     
     - How to know which environment the package is on?? 
@@ -23,7 +23,7 @@ NOTES:
         - npm list: display list of packages with versions.
         - npm list --depth=(0 is default): display list of packages with details and packages depends on it. (levels)
             - depth: levels. 
-            - for some versions: default depth is maximum depth not 0,these versions will display all details. 
+            - For some versions: default depth is maximum depth, not 0. These versions will display all details. 
         - npm view packageName => npm view cors: display details.
         - npm i packageName@1.4.5: install package in version@1.4.5  
         - npm install: بنزل مكتبات ناقصة 
