@@ -1,5 +1,5 @@
 // const math = require('./modules/math/math')
-// or automatically import
+// or automatically import (default)
 const math = require('./modules/') //# index.js
 
 // if you want just sum

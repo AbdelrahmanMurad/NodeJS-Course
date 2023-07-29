@@ -13,7 +13,7 @@ module.exports = {
     //1
     sum: require('./math/sum'),
     multiply: require('./math/multiply')
-    //2
+    //2 (without importing)
     // sum: (a,b)=>a+b,
     // multiply: (a,b)=>a*b
 };

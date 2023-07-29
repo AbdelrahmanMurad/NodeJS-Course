@@ -138,7 +138,7 @@ When to use POST?? (Modify) (Sensitive Data)
         - update
                 update post on facebook مثلا
                 story
-                reaction  
+                reaction (like)
         - delete
                 delete post on facebook
                 delete comment

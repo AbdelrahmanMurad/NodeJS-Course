@@ -1,6 +1,8 @@
 /**
- * there are some modules/functions are not need to be imported, because its global (already imported)
+ * There are some modules/functions are not need to be imported, because its global (already imported)
  * built-in functions usually be globals
+ * built-in from js
+ * global from node.js
  */
 
 /** Examples: 

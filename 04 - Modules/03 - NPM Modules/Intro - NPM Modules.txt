@@ -1,4 +1,4 @@
-1- NPM Modules: External packages. مكتبات خارجية
+1- NPM Modules (Node Package Manager): External packages. مكتبات خارجية
 2- The responsable of all modules is npm.
 3- NPM Modules is a dependences manager: كلها اللي موجودة على التطبيق dependances مسؤوول عن ادارة ال
 4- مسؤول عن ادارة وتنزيل المكتبات اللي بنزلها من برا

@@ -3,7 +3,7 @@
  * Buffer برجع على شكل 
  * Asynchronous
  */
-const { open } = require('fs')
+const { readFile, open } = require('fs')
 
 open('./data/text.txt', (err, fd) => {
     //fd => file descriptor.

@@ -2,13 +2,13 @@
 npm init
 npm init -y => insert data from it self.
 
-# install a package on production
+# install a package on production env
 npm install package_name
 npm i package_name
 npm install --save package_name
 npm i --save package_name
 
-# install a package on dev
+# install a package on dev env
 npm install --save-dev package_name
 npm i --save-dev package_name
 

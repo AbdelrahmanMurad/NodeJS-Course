@@ -10,4 +10,4 @@ Intro lecture
             -- هو الأساس 
             - like file system (fs).
       03) NPM Modules: External packages. مكتبات خارجية
-   7- The responsable of all modules is npm. 
+   7- The responsable of all modules is npm (Node Package Manager). 

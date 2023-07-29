@@ -15,8 +15,8 @@
 
 // an example for socket between client and server
 
+//importing & creating server
 const { createServer } = require('http')
-
 const server = createServer();
 
 //http://localhost:5000

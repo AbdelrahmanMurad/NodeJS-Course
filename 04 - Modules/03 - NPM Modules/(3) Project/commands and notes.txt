@@ -4,8 +4,8 @@ npm i cors
 
 NOTES:
     - There is two environments, local and production.
-        - local environment: named as development environment, for devs only. (clients\users can`t see it) (will not be pushed into production environment)
         - production environment: the server that devs push on it applications. (clients\users can see it)
+        - local environment: named as development environment, for devs only. (clients\users can`t see it) (will not be pushed into production environment)
     
     - How to know which environment the package is on?? 
         - from package.json: 
@@ -21,7 +21,7 @@ NOTES:
         - npm i --save packageName => production environment.
         - npm i --save-dev packageName => local environment.
         - npm list: display list of packages with versions.
-        - npm list --depth=(0 is default): display list of packages with details and packages depends on it. (levels)
+        - npm list --depth=(0 is default): display list of packages with details and packages depends on it. (levels/tree)
             - depth: levels. 
             - For some versions: default depth is maximum depth, not 0. These versions will display all details. 
         - npm view packageName => npm view cors: display details.
@@ -40,7 +40,7 @@ NOTES:
         - بتفيدني في التأكد من وجود تحديثات ام لا
         - ncu: npm i -g npm-check-updates.
         - its better to install it Globaly.
-        - -u means upgrade.
+        - -u: means upgrade.
         - نفسها packagesمشكلتها انو بتحدث فقط المعلومات. اي، رقم الاصدار، ولكنها لا تحدث ال
         - update اللي محتاجة packagesعلى ال highliteحتلاقي ال package.jsonلو دخلت على ال
         - How to solve this problem?? By using [npm install] => it will check, then updates.

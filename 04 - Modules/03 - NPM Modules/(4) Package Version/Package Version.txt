@@ -1,17 +1,20 @@
 In dependeces, what does it mean the three numbers of "express": "^4.18.2" ??
-    - First Box: Major. (Upgrade)
+    - First Box: Major رئيسي. (Upgrade)
         - الاصدار الرئيسي
         - تحديثات كبيرة جدا
         - شغلات كبيرة
         - coreتغييرات جذرية في ال
         - تغييرات كتيرة
         - نسخة جديدة بشكل كامل
+        - النسخة الجديدة 
     
-    - Second Box: Minor. (Update)
+    - Second Box: Minor صغير. (Update)
         - update معين 
         - ضايف ميزة جديدة
-    
-    - Third Box: Batch. (Modify)
+        - update صغير
+        - تحديث كامل للبرنامج upgradeتحديث صغير كاضافة ميزة صغيرة اما ال updateان ال update & upgradeاذا الفرق بين ال
+
+    - Third Box: Batch حزمة. (Modify)
         - bug اكتشاف والتعديل على 
         - تغييرات بسيطة جدا
         - مرفعتش اصدار جديد 
@@ -20,7 +23,7 @@ In dependeces, what does it mean the three numbers of "express": "^4.18.2" ??
     - First Version: 1.0.0.
 
 
-======================
+=======================
 ||Major, Minor, Batch||
 ||Major, Minor, Batch||
 ||Major, Minor, Batch||
@@ -33,4 +36,4 @@ In dependeces, what does it mean the three numbers of "express": "^4.18.2" ??
 ||Major, Minor, Batch||
 ||Major, Minor, Batch||
 ||Major, Minor, Batch||
-======================
+=======================

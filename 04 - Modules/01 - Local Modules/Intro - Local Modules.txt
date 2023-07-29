@@ -7,10 +7,10 @@
 2- Export Operation is in the same module. (exposing)
 
 3- Before importing the Module, you need to export the Module. 
-    - Without exporting the Module, you will import a file not module.
-    - So, Export First then Import.
+    - Without exporting(exposing) the Module, you will import a file not module.
+    - So, Export(exposing) First then Import.
 
-4- If your file name is index.js, automatically import will happen.
+4- If your file name is index.js, automatically import will happen (default).
     - أول ملف يتم قراءته indexأي ان ال
 
 5- There is multiple ways to export & import modules in local: (export يصدر)
@@ -44,7 +44,7 @@
 ==================================================================================
 Remember: 
  - Any File contains:
-        module.export = { fnName } => Module.
+        module.export = fnName >>>>>>> Module.
  - If Folder contains modules:
         - folder is not a module.
         - folder is a container of modules.

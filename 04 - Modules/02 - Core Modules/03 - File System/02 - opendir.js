@@ -1,5 +1,5 @@
 /** Introduction (opendir - Asynchronously)
- * Open directory: fetch content from any directory.
+ * Open directory: fetch directories names from the directory you are in.
  * (Path, callback)
  * Asynchronously
  * --------------------------

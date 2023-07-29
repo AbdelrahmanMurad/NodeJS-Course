@@ -18,7 +18,7 @@ open('./data/text.txt', 'a+', (err, fd) => {
     }
 
     //if exists
-    writeFile(fd, 'Hello new writing', (err) => {
+    writeFile(fd, '\nHello new writing from 27-7-2023', (err) => {
         if (err) {
             console.log(err)
         }

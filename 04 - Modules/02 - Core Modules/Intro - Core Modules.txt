@@ -8,7 +8,7 @@ Core Modules: Type of Modules came with Node.js Dependencies. بتيجي مع ا
                 - Global: Came with Node.js Dependencies.
                 
                     Built-in => js
-                    Blobal => Node.js Dependencies
+                    Global => Node.js Dependencies
 
             Examples: Class Math - fetch('url') - global - process.
     
@@ -20,7 +20,7 @@ Core Modules: Type of Modules came with Node.js Dependencies. بتيجي مع ا
             Answer/
             a=> core modules.
             b=> local modules, because of (./).
-        - There is @, _ , - => core modules.
+        - There is @(at), _(underscore) , -(hyphen) => core modules.
 
     - Examples of Core Modules: 
         1) Event Emitter.

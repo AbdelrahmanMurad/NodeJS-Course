@@ -1,0 +1,183 @@
+API: Application Programming Interface (Momen S)
+
+ Service provider layer between: client & server sideطبقة وسيطة تقدم مجموعة من الخدمات بين ال
+    1) Client: 
+        - Mobile Application
+        - Web Application (SPA: Single Page Application)
+            - Frontend 
+                - React.js
+                - Vue.js
+                - Angular.js
+
+    2) Server-Host:
+        - APIكل ما طور عليه وأستضيف عليه برامج طورت وبرمجت باستخدام اي كان من بيئات العمل او اللغات البرمجية الداعمة في تطوير ال
+        - Web Application
+            - Backend
+                - Laravel
+                - Yii
+                - Slim
+                - ASP MVC.net
+                - ASP Core.net
+                - Node.js
+
+Notes: 
+    1-  مثل ارسال صورة، رسالة، ستوري Applicationيتمثل في ال Clientال
+    2-  وهو المستقبل Serverيتم القراءة من ال  
+    3-  Serverوهي عبارة عن وسيط لعمليات ال Serverتابعة لل APIال
+    4-  HTTP,FTP مثل ال Web Protocolsمتمثل في ال API ال
+
+*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･
+*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･
+Web Protocols: 
+    1) HTTP: HyperText Transfer Protocol.
+        - APIأساسي في نقل البيانات في عمليات تصفح المواقع وتنفيذ ال
+        - غير امن
+        - Request لرفع صورة 
+        - Port (80) رقم البوابة
+        - HTTPS: HyperText Transfer Protocol Secure.    
+            - امن اي مشفر
+            - Port (443)
+            - Secure => S => SSL: Secure Socket Layer شهادة الحماية 
+                - Browserعلامة القفل على ال  
+                - SSL = TLS = SSL/TLS 
+                - TLS: Transport Layer Security عمل اتصال امن بين شقين
+                - Communication Security, Cryptographic Protocol
+                - Types:
+                    1- HTTP Request: 
+                        1- URI
+                        2- Methods
+                        3- Headers
+                        4- Body
+                    2- HTTP Response:
+                        1- Body
+                        2- Status Code
+    2) FTP: File Transfer Protocol.
+        - Protocol for transfer files.
+        - غير امن
+        - Serverعملية نقل البيانات من الجهاز الى ال
+        - Serverفي الاول بعمل اتصال بين الجهاز وال
+        - يعني لنقل بيانات كملفات او بيانات كاملة
+        - domainملهوش علاقة بال
+        - Port (21)
+        - SFTP: Secure File Transfer Protocol.
+            - امن
+            - Port (22)
+
+
+Note: domain => www.____.com => عبارة عن:
+    1- HTTP Request نصا
+    2- IP Address منفذ في الجهاز
+    3- Cloudflare Techniqe:
+        - تقنية وظيفتها الأساسية ادارة العمليات المتعلقة في حماية النظام البرمجي الخاص بي 
+        - (domainsحماية ال)
+    4- Hostinger Website:
+        - Offer web hosting plans for agencies that need to create multiple websites for clients.
+    5- ؟؟ Serverبالموقع مع ال domainكيف ربطنا ال
+        - nameservers (dns) له  Hostingerفي ال server كل 
+        - dnsيؤشر على ال domainنجعل ال
+    6- So, Web Protocols ==> (1) HTTP (2) FTP 
+        1- HTTP port(80) => HTTPS port(443)
+        2- FTP port(21) => SFTP port(22)
+            ==> S port is larger.
+
+*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･
+*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･
+HTTP Request Structure (Send new Request): API ناتجة من اي عملية تصفح لموقع التكروني او عملية 
+    Web Request == HTTPs Request
+        1) URI (https://___.com/file1/file2)
+        2) Methods (put - post)
+        3) Headers (content-type)
+        4) Body (data)
+    ==================================
+    1) URI: URL + URN
+        - Uniform Resource Identifire (domain) = Uniform Resource Locator + Uniform Resource nameservers
+        - https://facebook.com/Ahmed = https://facebook.com + /Ahmed
+        - domain & subdomain: https://blog.hubspot.com/what-is-a-domain.
+            - protocol: https
+            - subdomain: blog
+            - SLD: hubspot
+            - TLD: com
+            - Page Path: what-is-a-domain
+            - domain name: hubspot.com
+            - domain: hubspot.com/what-is-a-domain
+            - subdomain: blog.hubspot.com/what-is-a-domain
+            - عامل مثل اسمك ثلاثي subdomainال
+            - subdomainمش كل المواقع تدعم ال
+
+    2) Methods
+        - تحديد صفة العملية المنفذة من ناحية الهدف أو أسلوب العملية
+        - How??
+            1- GET: Fetch data (جلب البيانات) (read)
+            2- POST: Save/Processing (ارسال او حفظ البيانات - login - create acount => Processingتم ارسال البيانات لغرض المعالجة )
+            3- PUT/PATCH: Update data (التعديل)
+                => PUT: Update data, if not exists create a new one. (الاكثر استخداما)
+                => PATCH: Update data, if not exists nothing happens.
+            4- DELETE: Delete data
+
+
+    3) Headers
+        - Contains keys & values that describe the request.
+        - consist of key/value pairs.
+        - key is always string.
+        - Most Common Keys:
+            1- Accept: application/json
+            2- Content-Type: application/json
+            3- Authorization: TOKEN (تأشيرة)
+                - Token used to identify user in server side.
+                - Each user has a token when logged in successfully.
+                - Token has an expiration date defined by web developer.
+                - Without the token, you cant access web application. 
+                - Encryption.
+                - Made in Server Side.
+
+    4) Body (if required)
+        - معين request يمثل محتوى البيانات المراد ارسالها عند تنفيذ 
+        - Methods(POST,PUT,PATCH)عادة يستخدم مع ال
+        - Send data to server side.
+        - Encryption Type.
+        - Types: (content-type) 
+            1- x-www-form-url-encoded.
+                - Key: String.
+                - Value: String.
+            2- form-data. (multipart/form-data)
+                - Key: String.
+                - Value: String/File.
+
+*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･
+*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･
+HTTP Response Structure: Responseله Requestكل 
+    1) Body
+    2) Status Code
+    ==================================
+    1) Body
+        - Received data.
+        - JSON: Java Script Object Notation
+            - Key (String ""): Value (String "" or JSON Object {} or JSON Array [])
+        - XML
+
+    2) Status Code
+        - Numeric Value.
+        - Textual Value.
+        - Categories.
+        - https://www.semrush.com/blog/http-status-codes/
+            - 1xx: Informational قيد المعالجة
+            - 2xx: Success
+            - 3xx: Redirection (from link to link)
+            - 4xx: Client error (Front)
+            - 5xx: Server error (Back)
+
+Note: 
+    1- Postman: 
+        - Postman is an API Platform for developers to design, build, test and iterate their APIs.
+        - Postman is an API platform for building and using APIs. It helps you simplify each step of the API lifecycle and collaborate with others.
+
+*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･
+*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･
+Server Response Representation: 
+    1) When server sends the response it encodes it. (تشفير)
+        - Encode: تشفير
+            - Transfare from JSON to String.
+
+    2) When response delivered to client side, must be decoded.
+        - Decode: فك التشفير 
+            - Transfare from String to JSON.

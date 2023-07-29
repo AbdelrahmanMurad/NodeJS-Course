@@ -1,4 +1,4 @@
-1- npm install cors. 
+1- npm install cors or npm install. 
     result\\ 1 folder and 2 files:  
             - node_modules: contain all libraries. (folder)
                 - غالبا ما بتعامل معه
