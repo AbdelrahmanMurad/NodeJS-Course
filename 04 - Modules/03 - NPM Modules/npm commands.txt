@@ -1,6 +1,6 @@
 # initiate npm
-npm init
-npm init -y => insert data from it self.
+npm init => start project and insert data from user.
+npm init -y => start project and insert data from it self.
 
 # install a package on production env
 npm install package_name
