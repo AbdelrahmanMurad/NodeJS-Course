@@ -4,5 +4,10 @@ id of books has numbers and letters. => we need to check if its right and make E
 && => (configurations => db.js)
 
 1- controller => books.js
+    //TODO: (1) Error Handling 
 2- controller => books.js
+    //TODO: (2) Error Handling - try()catch()
 3- configurations => db.js ----- app.js
+    //TODO: (3) we need to Handle Error. instead of handling each promise, we can handle all of them in one time. => go to app.js
+    //TODO: (3) continue (in app.js)
+

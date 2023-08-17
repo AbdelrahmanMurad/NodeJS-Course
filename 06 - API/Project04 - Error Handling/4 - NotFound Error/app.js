@@ -18,11 +18,12 @@ process.on('unhandledRejection', (reason) => {
 routes(app);
 
 /**
- * Not Found handler
+ * TODO: Not Found handler
  */
 app.use((req, res, next) => {
     const error = createError(404);
     next(error);
+    console.log('here');
 });
 
 

@@ -21,7 +21,36 @@ module.exports = (app) => {
         res.redirect('/courses');
     })
 
-    //?routes group = Router
+    //routes group = Router
     app.use('/student', studentRouter);
+    // const studentRouter = require('./students');
     // '/students' => prefix
 }
+
+/**
+ ===============================================
+    Note
+ ===============================================
+    // routes group = Router
+    // Router الى مجموعات من باب التنظيم Routesفصل ال
+    app.get('/student/profile');//one route
+    app.get('/student/grades');//one route
+    app.get('/student/timetable');//one route
+    // /student => This is called prefix
+
+
+===============================================
+File students.js
+===============================================
+
+ const { Router } = require('express');
+ const router = Router();
+
+ router.get('/profile')
+       .get('/grades')
+       .get('/timetable');
+    // Router for Student Routesوعمل  Routesتم جمع ال
+   
+module.exports = router;
+
+ */

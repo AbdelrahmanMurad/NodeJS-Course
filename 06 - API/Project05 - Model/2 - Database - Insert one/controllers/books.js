@@ -23,7 +23,6 @@ const getBooksPageCount = (req, res, next) => {
         const limit = 10;
         const count = await collection.count({}); // documents number
         const pages = Math.ceil(count / limit);
-
         res.json({
             pages: pages
         })
@@ -47,7 +46,6 @@ const getBookById = (req, res, next) => {
                 next(error);
             }
             res.json(book);
-
         } catch (err) {
             const error = createError(500, err.message);
             next(error);

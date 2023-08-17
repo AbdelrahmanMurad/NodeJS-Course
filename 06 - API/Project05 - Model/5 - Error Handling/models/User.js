@@ -2,7 +2,6 @@ const { dbConnection } = require('../configurations');
 const { userVal } = require('../validators');
 
 class User {
-
     constructor(userData) {
         this.userData = userData;
     }
@@ -13,7 +12,7 @@ class User {
                 await collection.insertOne(this.userData);
             })
         } catch (err) {
-            // return err;
+            // or return err;
             return {
                 status: false,
                 error: err.message
@@ -76,5 +75,5 @@ const userData = {
     email: "john@gmail.com"
 }
 
-//Object user
+//Instance user
 const user = new User(userData);

@@ -1,15 +1,14 @@
 Signup 2: https://youtu.be/hvB9uXwvg80?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H
 
-The try()catch() cant catch async error. 
+The try()catch() CANT catch async error. 
  - so, in every handling async code, we need to handle the error.
  - solution\\ handle it with promise or callback. 
     - try()catch() will not be usefull without cb or promise.
 
-in signup => send data => so its post method.
-
--- راجع المجلدات التالية
-   1) models
-   2) controllers
-   3) routes 
-
-continue in body parser.
+- in signup function => the function is sending data, so the HTTP method we will use is post not get. (in route)
+- dont forget to select POST Method in postman, and select the Body[
+    Its better to select the same body of request. (we are using JSON)
+]
+---User.js
+    auth.js (controllers)
+    auth.js (routes)

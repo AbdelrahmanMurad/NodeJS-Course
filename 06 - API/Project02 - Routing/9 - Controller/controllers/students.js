@@ -32,3 +32,5 @@ const getTimeTable = (req, res, next) => {
 module.exports = {
     getGrades, getProfile, getTimeTable
 }
+
+// module.exports = getGrades, getProfile, getTimeTable => مش حقدر اصلهم

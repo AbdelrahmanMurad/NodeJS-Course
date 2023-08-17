@@ -2,4 +2,4 @@
 
 - الترتيب مهم جدا 
 - الترتيب ينظم الكود
-- شغل local modules
+- نظام local modules

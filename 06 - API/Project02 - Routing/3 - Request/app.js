@@ -5,17 +5,22 @@ const app = express();
 app.get('/courses', (req, res, next) => {
 
     //*1.how to get parameters (search bar)
+    //for details in url
 
     console.log(req.query);
     //try: ?timezone=asia$lang=en in the search bar.
-    // it will print it in the terminal
+    // req.query is an object => result print in terminal => { timezone: 'asia', lang: 'en' }
+    const timezone = req.query.timezone;
     const lang = req.query.lang;
+    console.log(`timezone is ${timezone}`);
     console.log(`lang is ${lang}`);
     //dont forget to reconnect => ctrl c.
 
     console.log(`--------------------------------`);
 
     //*2.how to get headers
+    // for more details in server 
+
     console.log(req.headers);
     const host = req.headers.host;
     console.log(`host is ${host}`);
@@ -28,11 +33,10 @@ app.get('/courses', (req, res, next) => {
      *          - If you want it upperCase use this way.
      *          - and if it was more than one word, it will be like this: Content-Type.
     */
-   
+
     console.log(`--------------------------------`);
     const acceptEncoding = req.get('Accept-Encoding');
     console.log(`accept encoding is ${acceptEncoding}.`);
-
 
 
     //json response

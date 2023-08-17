@@ -4,28 +4,37 @@ const createError = require('http-errors');
 const signup = (req, res, next) => {
     const userData = req.body;
 
-    //validation => static
-    const vali = User.validate();
+    const vali = User.validate(userData);
     if (vali.error) {
-        next(createError(400, vali.error.message));
+        return next(createError(400, vali.error.message));
     }
 
-    //check existance => not static
     const user = new User(userData);
-
     user.isExist()
         .then(result => {
             if (result.check) {
-                next(createError(409, result.message));
-                //409 conflict => في تطابق
+                return next(createError(409, result.message));
             }
-            //as we said before, you can save() here 
+            // save here or after the isExist fn is done.
+            /*
+                user.save((status) => {
+                    if (status.status) {
+                    //201 success for created user, inserted user
+                    res.status(201).json({
+                        status: true,
+                        message: "user has been created successfully"
+                    })
+                    } else {
+                        next(createError(500, status.message))
+                    }
+                }); 
+            */
         })
         .catch(err => {
-            next(createError(500, err.message));
-            //500 internal server error => tryCatch جاي من 
+            return next(createError(500, err.message));
         });
 
+    //or save here
     //insert user => save()
     user.save((status) => {
         if (status.status) {
@@ -35,7 +44,7 @@ const signup = (req, res, next) => {
                 message: "user has been created successfully"
             })
         } else {
-            createError(500, status.message);
+            return next(createError(500, status.message))
         }
     });
 

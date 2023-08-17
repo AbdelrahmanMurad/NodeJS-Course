@@ -4,7 +4,7 @@ Middleware :https://youtu.be/ebmaKk3b4sQ?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H
 - **Middleware** in **Express.js** is a function that is executed between the incoming request and the outgoing response.
  It can be used to modify the request and response objects, perform tasks such as authentication and validation,
  and even terminate the request-response cycle. Middleware functions are functions that have access to 
- the request object (req), the response object (res), and the next middleware function in the 
+ the request object (req), the response object (res), and the (next) middleware function in the 
  application’s request-response cycle. They are arranged in a chain and are called in sequence. 
  Each middleware has access to the HTTP request and response for each route (or path) it’s attached to. 
  In fact, Express itself is compromised wholly of middleware functions.
@@ -29,7 +29,7 @@ Middleware :https://youtu.be/ebmaKk3b4sQ?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H
   - Middleware comes Before Route.
   - Middleware comes Before Route.
   - Middleware comes Before Route.
-  - Middleware comes Before Route. => app.use() comes before app.get(). || app.post(). || ...etc.
+  - Middleware comes Before Route. => app.use() comes before app.get(). || app.post(). || ...etc. (http-methods)
   - You can make more than one middleware.
   - الترتيب مهم جدا جدا جدا جدا جدا جدا جدا
   - In Route we dont use next().

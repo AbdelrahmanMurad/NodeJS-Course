@@ -57,7 +57,6 @@ class User {
                             { email: this.userData.email }
                         ]
                     })
-
                     if (!user) {
                         resolve({
                             check: false

@@ -34,7 +34,7 @@ const getBooksPageCount = (req, res, next) => {
 
 const getBookById = (req, res, nex) => {
 
-    //? (1) Error Handling 
+    //TODO: (1) Error Handling 
     if (!ObjectId.isValid(req.params.id)) {
         res.status(404).json({
             status: false,
@@ -44,7 +44,7 @@ const getBookById = (req, res, nex) => {
 
     const _id = new ObjectId(req.params.id);
     dbConnection('books', async (collection) => {
-        //? (2) Error Handling - try()catch()
+        //TODO: (2) Error Handling - try()catch()
         try {
             const book = await collection.findOne({ '_id': _id });
             if (!book) {
@@ -52,8 +52,7 @@ const getBookById = (req, res, nex) => {
                     status: false,
                     message: 'resource not found'
                 });
-            }
-            res.json(book);
+            } else res.json(book);
 
         } catch (error) {
             res.status(500).json({

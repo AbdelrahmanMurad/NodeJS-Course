@@ -20,14 +20,8 @@ app.get('/courses/byId', (req, res, next) => {
 /courses/byId?id=1
 /courses/byId?id=2
 /courses/byId?id=3
-//?Note:
-* const course = courses.find((course) => { course.id == id });
-* thats wrong, you have to write:
-* (course) => { return course.id == id }
-* or
-* course => course.id == id (shortcut)
 
-//TODO(2): get one course from id (Path Parameter)
+//TODO(2): get one course from id (Path Parameter) => better
 app.get('/courses/:id', (req, res, next) => {
     const id = req.params.id;
     const course = courses.find(course => course.id == id);
@@ -38,11 +32,21 @@ app.get('/courses/:id', (req, res, next) => {
 /courses/3
 */
 
-//?Try the code from comment part here...
+//?Try the comment code here...
 app.get('/courses/:id', (req, res, next) => {
     const id = req.params.id;
     const course = courses.find(course => course.id == id);
     res.status(200).json(course);
 })
 
-module.exports = app; 
+module.exports = app;
+
+/*
+Note:
+ const course = courses.find((course) => { course.id == id });
+ thats wrong, you have to write:
+ (course) => { return course.id == id }
+ or
+ course => course.id == id (shortcut)
+
+*/

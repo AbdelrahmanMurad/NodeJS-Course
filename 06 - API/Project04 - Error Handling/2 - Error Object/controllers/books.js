@@ -5,11 +5,11 @@ const createError = require('http-errors');
 const getBooks = (req, res, next) => {
     const pageNumber = parseInt(req.query.page);
     if (isNaN(pageNumber)) {
-        //? (1) Error Handling - Error Object
+        //TODO: (1) Error Handling - Error Object
         const error = createError(400, 'You should send a page number');
         // const error = createError(400);
         // default => will return text msg depending on status code.
-        //404 => not found, 500 => internal server error. 
+        //404 => not found, 500 => internal server error, ...so on
         res.status(error.statusCode).json({
             status: false,
             message: error.message
@@ -41,7 +41,7 @@ const getBooksPageCount = (req, res, next) => {
 const getBookById = (req, res, nex) => {
 
     if (!ObjectId.isValid(req.params.id)) {
-        //? (2) Error Handling - Error Object
+        //TODO: (2) Error Handling - Error Object
         const error = createError(404, 'Id is not valid');
         res.status(error.statusCode).json({
             status: false,
@@ -54,7 +54,7 @@ const getBookById = (req, res, nex) => {
         try {
             const book = await collection.findOne({ '_id': _id });
             if (!book) {
-                //? (3) Error Handling - Error Object
+                //TODO: (3) Error Handling - Error Object
                 const error = createError(404, 'Resource not found');
                 res.status(error.statusCode).json({
                     status: false,
@@ -64,7 +64,7 @@ const getBookById = (req, res, nex) => {
             res.json(book);
 
         } catch (err) {
-            //? (4) Error Handling - Error Object
+            //TODO: (4) Error Handling - Error Object
             const error = createError(500, err.message);
             res.status(error.statusCode).json({
                 status: false,

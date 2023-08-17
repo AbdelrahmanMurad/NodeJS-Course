@@ -15,7 +15,7 @@ Idea of application: user web site
         - reviewers
     - the books have reviews, and the reviews comes from reviewers.
         so, to review we need a reviewer, and thats a user.
-    - the user needs acount.
+    - the user needs an acount.
         - so, you need one more collection named as users. (thats better)
         - or you can store the name & password of users in reviewers.
 

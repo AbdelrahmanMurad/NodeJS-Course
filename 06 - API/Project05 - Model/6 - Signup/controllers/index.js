@@ -1,3 +1,4 @@
 module.exports = {
-    booksController: require('./books')
+    booksController: require('./books'),
+    authController: require('./auth'),
 }

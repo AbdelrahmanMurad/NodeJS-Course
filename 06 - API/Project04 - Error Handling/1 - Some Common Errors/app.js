@@ -3,7 +3,7 @@ const routes = require('./routes');
 
 const app = express();
 
-//? (3) continue
+//TODO: (3) continue
 //Handling all promises in one time.
 // process is a global variable
 // action => unhandledRejection => means: error that dont have handle, so this action will handle it instead.
@@ -11,9 +11,10 @@ const app = express();
 process.on('unhandledRejection', (reason) => {
     console.log(reason);
     process.exit(1);
-}); 
-// num!=0 => Prpcess is done with Fail.
-// 0 => Prpcess is done with Success.
+    // num!=0 => Prpcess is done with Fail.
+    // 0 => Prpcess is done with Success.
+});
+
 routes(app);
 
 module.exports = app;

@@ -1,0 +1,11 @@
+Docs Relation - (1): https://youtu.be/68jAwHt6lQs?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H
+Docs Relation - (2): https://youtu.be/TazMdBfA-vY?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H
+
+تكملة للمشروع - المفروض لما نضيف يوزر يتم اضافة ريفيوور:
+- id of user == id of Reviewer
+- Reviewer has name and userId.
+
+
+--- Reviewer.js
+    User.js [save() function]
+    auth.js [save() function]

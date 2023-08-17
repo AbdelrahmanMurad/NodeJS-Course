@@ -4,7 +4,7 @@ Controller: https://youtu.be/pd9jcORAf88?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H
 
 - واضحة
 - Controllers وضع العمليات في مجلد اسمه 
-- شغل local modules
+- local modules
 - Every Entity has a Controller.
 - Finally, index returns Every Controllers.
 
@@ -13,7 +13,7 @@ Controller: https://youtu.be/pd9jcORAf88?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H
 -  export له module تذكر انو كل 
 
 
-- Names of Folder (controllers) not from nodejs, its from MVC.
+- Name of Folder (controllers) not from nodejs, its from MVC.
 - Names of Folders (middlewares, routes) from nodejs from express.
 
 

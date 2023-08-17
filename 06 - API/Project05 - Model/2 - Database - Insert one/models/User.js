@@ -1,7 +1,6 @@
 const { dbConnection } = require('../configurations');
 
 class User {
-
     constructor(userData) {
         this.userData = userData;
     }
@@ -14,8 +13,8 @@ class User {
             //every object is document.
         });
     }
-
 }
+//const instance = new MyClass();
 
 const user = new User({
     name: "John Smith",
@@ -25,4 +24,4 @@ const user = new User({
 });
 
 user.save();
-//if there is no user collection, it will be created and adds the document. (just in NoSQL)
+//if there is no user collection, it will be created and adds the document. (just in NoSQL) => Try it.

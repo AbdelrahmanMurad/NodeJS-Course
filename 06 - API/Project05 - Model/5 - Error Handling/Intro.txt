@@ -2,7 +2,7 @@
 
 
 
-- modlesفي ال http-errors من المفضل عدم استخدام 
+- HTTP(req,res,next)يتم الاستخدام لوجود ال Controllersاما في ال modlesفي ال http-errors من المفضل عدم استخدام 
 - we cant use next().
 - so use try()catch().
 - User modelكل الشغل في ال

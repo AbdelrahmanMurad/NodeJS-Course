@@ -5,7 +5,7 @@ const createError = require('http-errors');
 const getBooks = (req, res, next) => {
     const pageNumber = parseInt(req.query.page);
     if (isNaN(pageNumber)) {
-        //? (1) Error Handling - Global Error Handler - next() 
+        //TODO: (1) Error Handling - Global Error Handler - next() - go to app.js
         const error = createError(400, 'You should send a page number');
         next(error);
     }
@@ -35,7 +35,7 @@ const getBooksPageCount = (req, res, next) => {
 const getBookById = (req, res, next) => {
 
     if (!ObjectId.isValid(req.params.id)) {
-        //? (2) Error Handling - Global Error Handler - next() 
+        //TODO: (2) Error Handling - Global Error Handler - next() - go to app.js
         const error = createError(404, 'Id is not valid');
         next(error);
     }
@@ -45,14 +45,14 @@ const getBookById = (req, res, next) => {
         try {
             const book = await collection.findOne({ '_id': _id });
             if (!book) {
-                //? (3) Error Handling - Global Error Handler - next() 
+                //TODO: (3) Error Handling - Global Error Handler - next() - go to app.js
                 const error = createError(404, 'Resource not found');
                 next(error);
             }
             res.json(book);
 
         } catch (err) {
-            //? (4) Error Handling - Global Error Handler - next() 
+            //TODO: (4) Error Handling - Global Error Handler - next() - go to app.js
             const error = createError(500, err.message);
             next(error);
         }

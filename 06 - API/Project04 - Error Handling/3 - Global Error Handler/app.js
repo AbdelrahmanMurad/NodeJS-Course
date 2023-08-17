@@ -16,8 +16,8 @@ process.on('unhandledRejection', (reason) => {
  */
 routes(app);
 
-/**
- * Error handler
+/** 
+ * TODO: Error handler
  * مكان واحد لتسليم الايرور
  */
 app.use((error, req, res, next) => {

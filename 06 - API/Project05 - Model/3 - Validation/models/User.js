@@ -1,5 +1,5 @@
 const { dbConnection } = require('../configurations');
-const { userVali } = require('../validators');
+const { userVal } = require('../validators');
 
 class User {
 
@@ -22,11 +22,10 @@ class User {
        * its better to split it another floder.
     */
     static validate(userData) {
-        return userVali.validate(userData);
+        return userVal.validate(userData);
     }
 
 }
-
 
 const userData = {
     name: "John Smith",
@@ -36,18 +35,14 @@ const userData = {
     email: "john@gmail.com"
 }
 
-//Object user
+//Instance
 const user = new User(userData);
 
-//try these logs:
-// To Run: node models/user.js
-
-// console.log(user.validate(userData));// will print value & error meassage
-
-// const valResult = user.validate(userData);// fail => wont work
-const valResult = User.validate(userData);// {User} is name of class => because validate is static.
-// static: objectوليس بال classمرتبطة بال
-console.log(valResult);
+// const valResult = user.validate(userData);// error meassage => user.validate is not a function => because validate is static.
+// // (static => Instanceوليس بال classمرتبطة بال)
+// const valResult = User.validate(userData);// {User} is name of class => because validate is static.
+// // (static => Instanceوليس بال classمرتبطة بال)
+// console.log(valResult);
 
 
 // if (valiResult.error) {

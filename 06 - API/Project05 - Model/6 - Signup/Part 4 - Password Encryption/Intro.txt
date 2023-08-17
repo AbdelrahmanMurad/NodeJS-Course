@@ -1,1 +1,20 @@
 Password Encryption: https://youtu.be/1ORsdB3Dy-Y?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H
+
+- عشان لو في حد وصل للداتا ما يفهم التشفير mongoDBفي ال passwordعشان نعمل تشفير لل
+
+- Two Types:1- One Way Incryption.
+            2- Two Way Incryption.
+
+- One Way Incryption: فش اي طريقة لفك التشفير تاعها حتى الخوارزميات ما بتشفر
+- Two Way Incryption: في طريقة للتشفير
+
+- من قوى الخوارزميات bcrypt algorithm احنا حنستخدم ال
+- npm i bcryptjs
+- hash method from bcrypt. 
+    - hash is async, we need to use it in save() function.
+    - we will face a problem that the line of inserting data will be sync. 
+    - so you need to handle it, or use hashSync. :)
+
+
+
+--- User.js

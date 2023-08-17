@@ -21,8 +21,7 @@ module.exports = (app) => {
         res.redirect('/courses');
     })
 
-    //?routes group named as Router
+    //Router
     app.use('/students', studentRouter);
     // '/students' => prefix
 }
-

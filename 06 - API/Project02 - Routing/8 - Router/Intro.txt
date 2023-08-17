@@ -4,7 +4,7 @@ Router: https://youtu.be/JBrCwj9h4Js?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H
  become bloated and difficult to reason about. Routers are like mini versions of Express applications. 
  They provide functionality for handling route matching, requests, and sending responses, but they do not start 
  a separate server or listen on their own ports.
- Routers use all the .get(), .put(), .post(), and .delete() routes that you are now familiar with. 
+ Routers use all the .get(), .put(), .post(), and .delete() routes that you are now familiar with. (http-methods) 
  You define routing using methods of the Express app object that correspond to HTTP methods; for example, 
  app.get() to handle GET requests and app.post() to handle POST requests.
  The express.Router() function is used to create a new router object.
@@ -12,5 +12,5 @@ Router: https://youtu.be/JBrCwj9h4Js?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H
 
 
 Router: في جروب Routeبجمع اكثر من 
-Router: Group of Routers.
+Router: Group of Routes.
 we use app.use() in Router.

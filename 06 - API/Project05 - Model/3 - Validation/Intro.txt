@@ -12,8 +12,13 @@ validation is for login and register ...etc (account things)
         - validate()
             - checks the user data (details). 
             - modelبتحسها مستقلة عن ال
-            - static في حاي الحالة يفضل انو يتم تعريفها 
+            - static في هاي الحالة يفضل انو يتم تعريفها 
             - لانها ثاااااااااابتة
             - متغيرة saveاما ال
-            - dont forget that static dont take (this).
-            - read the static review file.
+            - dont forget that static dont take (this) keyword.
+            - (this) keyword means => instance, object.
+            - read the "static review" file.
+
+
+--- validators floder
+    - User.js

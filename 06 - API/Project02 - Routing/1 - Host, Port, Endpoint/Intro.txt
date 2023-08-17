@@ -19,4 +19,4 @@ when the [/student] called link ??
   - if the application is not api.
 
 when the [/student] called endPoint(route)???  
-  - if the application is api. 
+  - if the application is api.

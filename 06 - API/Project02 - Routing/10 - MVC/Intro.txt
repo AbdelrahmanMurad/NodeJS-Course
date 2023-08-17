@@ -13,8 +13,8 @@ MVC: https://youtu.be/-xKVqzsxm8A?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H
 [user <--> middleware <--> routes <--> view <--> controller <--> model <--> DB]
 
 - From Model you can deal with database.
-- From View 
-- From Controller
+- From View you can deal with UI
+- From Controller you can deal with operations
 
 
 How does it work to get database??
@@ -40,7 +40,8 @@ Software Design: كيفية تقسيم الملفات
       - مرحلة التصميم لبرنامج هي عملية تحليلية لمتطلبات البرنامج لاختيار و بناء هيكل البرنامج و أجزاءه و كيفية ترابطها مع بعضها البعض، ينتج عن ذلك مجموعة من الملفات و النماذج و الرسومات البيانية التي يمكن منها برمجة وكتابة شيفرة البرنامج “بالكامل”.
 
 Design System: 
-    - نظام التصميم هو عبارة عن مجموعة من العناصر (Components) التي يمكنك دمجها بعدة طرق للحصول على شكل معين، وهو الذي يساعد الشركات على ادارة التصميم الخاص بها عند التوسع والتضخم.
+    - التي يمكنك دمجها بعدة طرق للحصول على شكل معين، وهو الذي يساعد الشركات على ادارة التصميم الخاص بها عند التوسع والتضخم. (Components) نظام التصميم هو عبارة عن مجموعة من العناصر 
+     
 https://hussam3bd.com/%d9%85%d8%a7-%d9%87%d9%88-%d9%86%d8%b8%d8%a7%d9%85-%d8%a7%d9%84%d8%aa%d8%b5%d9%85%d9%8a%d9%85-design-system-%d9%88%d9%85%d8%aa%d9%89-%d9%8a%d8%ac%d8%a8-%d8%a3%d9%86-%d8%a7%d8%b3%d8%aa%d8%ae%d8%af/
 
 

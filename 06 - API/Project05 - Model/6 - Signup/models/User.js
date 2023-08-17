@@ -2,7 +2,6 @@ const { dbConnection } = require('../configurations');
 const { userVali } = require('../validators');
 
 class User {
-
     constructor(userData) {
         this.userData = userData;
     }
@@ -13,13 +12,14 @@ class User {
                 await collection.insertOne(this.userData);
             })
         } catch (err) {
-            // return err;
             return {
                 status: false,
                 error: err.message
             }
         };
-        return { status: true }
+        return {
+            status: true
+        }
     }
 
     isExist() {
@@ -70,15 +70,3 @@ class User {
 }
 
 module.exports = User;
-// const userData = {
-//     name: "John Smith",
-//     username: "John",
-//     password: "12245aswqAA6",
-//     email: "john@gmail.com"
-// }
-
-// //Object user
-// const user = new User(userData);
-
-
-

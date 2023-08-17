@@ -23,7 +23,6 @@ app.get('/courses', (req, res, next) => {
 
         res.status(400).json(
             { message: 'lang is required' }
-
         );
     }
 });
@@ -33,7 +32,7 @@ app.get('/courses', (req, res, next) => {
  */
 
 //Middleware => use()
-//use() is not just for middleware.
+//use() is not for middleware just.
 app.use('/courses', (req, res, next) => {
     const lang = req.query.lang;
     if (lang && (lang == 'en' || lang == 'ar')) {
@@ -60,7 +59,7 @@ app.get('/courses', (req, res, next) => {
     res.status(200).json(courses);
 });
 
-//changibel
+//changeable
 app.get('/courses/:id', (req, res, next) => {
     const id = req.params.id;
     const course = courses.find(course => course.id == id);

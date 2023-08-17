@@ -4,9 +4,10 @@ const app = express();
 
 //Anything about Backend, need to be called by app. because app calls express.
 //now we need to create route(link), from where?? from app(express)
-//.get('link','data(callBack(req, res, next))');
+//.get('url','callback fn to store data');
+//.get('url','(req, res, next)=>{})');
 app.get('/student', (req, res, next) => {
-    //*route needs to be start with forward slash /: /student.
+    //*route needs to be start with forward slash / => /student.
     res.send('<h3>Welcome to Student Page</h3>');
     //http://localhost:3000/student
 });
@@ -18,10 +19,12 @@ app.get('/', (req, res, next) => {
 
 /**
  * requst: req for read data, reciving, reception, pickup.
+ *   read data from server. 
  * 
  * response: res for send data, post.
  *  res.send('htmlContent');
  *    ss
+ *   send data from the application to server.
  */
 
 

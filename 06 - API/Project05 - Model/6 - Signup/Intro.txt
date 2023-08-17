@@ -1,9 +1,10 @@
 Signup 1: https://youtu.be/0QT6JQWDHJQ?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H
 
-Steps of signup:
-    1- validation.
-    2- check existance.
-        - you can save user here, in then() after result.
-    3- save().
+/** steps signup() method
+ * 1- request data.
+ * 2- validation.
+ * 3- check existance. (you can save user here, in then() after result. [because its promise])
+ * 4- save data.
+ */
 
 -- controllers => auth.js

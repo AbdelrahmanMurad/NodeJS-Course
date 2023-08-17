@@ -15,11 +15,15 @@ class User {
     }
 
     isExist() {
+        // I/O operation
         return new Promise((resolve, reject) => {
             dbConnection('users', async (collection) => {
                 try {
                     const user = await collection.findOne({
-                        '$or': [ //two conditions
+                        /* username: this.userData.username, 
+                           email: this.userData.email 
+                        this is and, we need or. */
+                        '$or': [ //two conditions (output: arrayOfCondition)
                             { username: this.userData.username },
                             { email: this.userData.email }
                         ]
@@ -51,7 +55,7 @@ class User {
             })
         })
     }
-    //why did you used promise??
+    //why did you used promise?? (I/O operation)
     // To return a result.
     // & the dbconnection is async, and it will not return for the isExist() function. so we need to handle it with promise.
     // so when you use promise, the result of dbConnection will hand over to the promise.
@@ -63,32 +67,3 @@ class User {
     }
 
 }
-
-
-const userData = {
-    name: "John Smith",
-    username: "John",
-    password: "12245aswqAA6",
-    // password: "122456",
-    email: "john@gmail.com"
-}
-
-//Object user
-const user = new User(userData);
-
-//try these logs:
-// To Run: node models/user.js
-
-// console.log(user.validate(userData));// will print value & error meassage
-
-// const valResult = user.validate(userData);// fail => wont work
-const valResult = User.validate(userData);// {User} is name of class => because validate is static.
-// static: objectوليس بال classمرتبطة بال
-console.log(valResult);
-
-
-// if (valiResult.error) {
-//     //validation wrong
-// } else {
-//     user.save();
-// }
