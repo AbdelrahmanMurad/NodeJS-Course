@@ -1,3 +1,10 @@
 Upsert - (1): https://youtu.be/Y9EaqumR3h4?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H
 Upsert - (2): https://youtu.be/8LAn75YyXAc?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H
 
+- There is no reviewer without user account. 
+    - reviewer needs _user_id & name.
+    - if there was a reviewer has just name, then we need to update this reviewer to has the _user_id.
+
+- Upsert means Update
+
+--- Reviewer.js

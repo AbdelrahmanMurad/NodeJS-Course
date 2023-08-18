@@ -1,13 +1,14 @@
 {
   "dependencies": {
     "@hapi/joi": "^17.1.1",
-    "bson": "^5.3.0",
+    "bcryptjs": "^2.4.3",
+    "bson": "^5.4.0",
     "express": "^4.18.2",
     "http-error": "^0.0.6",
     "http-errors": "^2.0.0",
     "install": "^0.13.0",
     "mongodb": "^5.6.0",
-    "nodemon": "^2.0.22"
+    "nodemon": "^3.0.1"
   },
   "name": "nodejs-course",
   "version": "1.0.0",
