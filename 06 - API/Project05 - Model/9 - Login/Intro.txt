@@ -1,0 +1,15 @@
+Login: https://youtu.be/kHFAJlUFlv8?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H
+
+- Why login in User.js is static??
+    1) Because it doesnt need all the account information. (name, username, email, password) (all the object)
+        - login needs just [username or email, and password]
+    2) Because we need to execute the login() function before fetching the user (before calling the user by making an instance). "we dont know who is the user, until he login"
+
+- بتشفر كل مرة تشفير مختلف، حتى لو عملت لنفس الداتا، حيتم تشفيرها في المرة الثانية بتشفير مختلف bcryptال
+
+
+--- User.js (models)
+    user.js (validators)
+    index.js (validators)
+    auth.js (controller)
+    auth.js (routes)

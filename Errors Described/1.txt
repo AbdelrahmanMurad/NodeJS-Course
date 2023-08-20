@@ -1,0 +1,9 @@
+1) Problem in Async/Sync. 
+
+PoolCloserError [MongoPoolClosedError]: Attempted to check out a connection from closed connection pool 
+at connectionPool.processWaitQueue (address)
+========================================================================================================
+2) Forget return keyword
+
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+========================================================================================================

@@ -1,0 +1,16 @@
+Join - (1): https://youtu.be/fqiI8zrgHZQ?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H
+Join - (2): https://youtu.be/UC2JWp-8GeQ?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H
+
+
+- We need to fetch the data for the user who logged in, We need the reviewer data also.
+    - This called in SQL: JOIN => Fetch data from two tables, which is data from a record in table 1 merged with a recored in table 2.
+    - Left Join
+        - هاتو Reviewerلو لقيت ال
+        - لو ما لقيتوش جيب اليوزر من دون الريفيوور
+    - in mongoDB, How??
+        1) mongoDB is NoSQL => no relations => fetch user, then fetch reviewer. (independently بشكل مستقل)
+
+        2) make a connect from mongoDB between two collections. (aggregation تجميع)
+
+
+--- User.js (Models)
