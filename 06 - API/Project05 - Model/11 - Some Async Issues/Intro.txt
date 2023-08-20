@@ -1,0 +1,8 @@
+Some Async Issues - Nested Handlers: https://youtu.be/uclFI2XulDQ?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H
+Some Async Issues - Stop Functions: https://youtu.be/mNvaUpN2iLI?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H
+
+Stop Functions: 1- return
+                2- next() => احيانا
+                3- res.status().json() => احيانا
+
+- To make sure, use the return keyword, also before the next and res keywords.
