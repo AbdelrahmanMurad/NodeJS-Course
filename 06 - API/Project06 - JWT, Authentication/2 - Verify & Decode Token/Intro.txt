@@ -1,0 +1,47 @@
+Verify & Decode Token: https://youtu.be/1kSaeZwXRPs?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H
+
+Notes:
+- To Verify the Token in the requests: you need to create middleware. (Tokenفحص ال)
+- You should not make the Verifying in the same middleware file of the project. (that file is on all routes (all requests))
+- Verifying the Token cant be on all requests.
+- Verify the Token is just for Token. And authentication Verifies the login and signup functions.
+- So, create an independent middleware => auth.js (middlewares)
+- From headers you get token.
+
+1: Read the Token from header(header name is authorization ترخيص).
+2: From Head Box in Postman choose Authorization section and put the Type to Bearer Token.
+    - we use Bearer Token when we want to send Token.
+3: Copy the Token from Body Section, paste it in Token form in the Authorization section.
+4: Go to Headers Section in Head Box, you will see the value of Authorization key => Bearer asdfasdfjhftwqd(Token code).
+    - Here's why Bearer Token named like that.
+    - And its a standard in web development.
+    - When you want to send a Token, you add the word Bearer with a space before the Token code.
+    - Bearer used for Authentication Token, there is another types of Tokens not for Authentication.
+5: In auth.js file, now you need to get the token from the header.
+    - req.get()
+6: Complete the rest from the file.
+
+
+/*Steps:
+======================================
+- auth.js (middlewares)
+1- request: get Token from the Header Authorization.
+2- check if there is Token.
+3- split the token from Bearer word.
+4- decode operation{
+       a) verifying that token is authorized. => [verify(token, secretKey)]
+       b) store user id & reviewer id in the request.
+   } 
+======================================
+- index.js (middlewares)
+5- make the token request local not global.
+======================================
+- app.js => {middlewares.global(app);}
+6- global middleware
+======================================
+- books.js (routes)
+7- local middleware in the routes you need.
+*/
+
+
+So: Generate Token (Encode Token) => Verify Token => Decode Token.

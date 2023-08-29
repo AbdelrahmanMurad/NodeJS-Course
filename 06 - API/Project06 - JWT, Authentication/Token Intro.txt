@@ -1,0 +1,11 @@
+Authentication - Token: https://youtu.be/ergHeQqc9Q0?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H
+
+What is Token: https://io.hsoub.com/webdev/30675-%D9%85%D8%A7-%D9%87%D9%88-%D8%A7%D9%84%D9%80token-%D8%A3%D8%AD%D8%AA%D8%A7%D8%AC-%D8%A7%D9%84%D9%89-%D9%85%D8%B3%D8%A7%D8%B9%D8%AF%D8%A9-%D8%B3%D8%B1%D9%8A%D8%B9%D8%A7
+
+Token: 
+ - If  you google define:token, you get (amongst others) the following two definitions that seem applicable:
+        - an individual instance of a type of symbol; "the word 'error' contains three tokens of `r'".
+        - something serving as a sign of something else.
+ - If you combine these two, you will land somewhere near what is commonly meant when talking about tokens in programming; a symbol representing something. Pretty vague, yes, but then it's used in many different contexts.
+ - One example: you have an authentication system where a user logs on. When the system has authenticated the user, instead of repeating this process for every request, a token is created that represents the fact that the user is authenticated.
+   This token is then used in subsequent requests. In this case the something is the fact the the user is authenticated, and the token represents this fact.

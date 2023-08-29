@@ -1,0 +1,18 @@
+Authentication - JWT: https://youtu.be/dhLXay4KzI4?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H
+
+JWT: JSON Web Token => https://jwt.io/
+
+payload: data that needs to be converted to token (encode)
+key: مفتاح التشفير 
+
+npm i jsonwebtoken
+
+- احنا كنا سابقا نرجع يوزر
+- في الاساس بنفعش ارجع يوزر لانها معلومات مكشوفة
+- Generate Token وهاي اسمها العملية Token يعني لازم ارجع  
+- Loginوهاي العملية بتصير في ال
+- userبنرجع ال Loginلانو في ال
+- Generate Token means Encode Token.
+
+
+--- auth.js (controller)
