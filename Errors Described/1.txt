@@ -7,3 +7,26 @@ at connectionPool.processWaitQueue (address)
 
 Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
 ========================================================================================================
+3) dont use {} when its one fn in exposing routes.  
+
+
+Router.use() requires a middleware function but got a Object.
+
+module.exports = {
+    router
+    } 
+     =>
+        module.exports = router
+========================================================================================================
+4) use {} when its one fn in exposing controllers
+
+
+Route.post() requires a callback function but got a [object Undefined] 
+
+
+module.exports = add
+        =>
+module.exports = {
+    add
+    } 
+========================================================================================================
