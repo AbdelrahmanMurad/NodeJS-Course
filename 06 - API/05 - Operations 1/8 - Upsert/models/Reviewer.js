@@ -35,14 +35,17 @@ class Reviewer {
                 //part-2: Upsert
                 //Update(Upsert) reviewer if reviewer doesnt has a _user_id. 
                 await collection.updateOne(
-                    { name: this.reviewerData.name, _user_id: null }, // (line one)
+                    { name: this.reviewerData.name, _user_id: null }, // (line one) 
                     { $set: { _user_id: this.reviewerData._user_id, name: this.reviewerData.name } }, // (line two)
-                    { upsert: true }
+                    { upsert: true } // (line three)
                 )
+                //line one: if (conditions)
+                //line two: then
+                //line three: start
                 //{ upsert: true } => means => if the compiler or the mongoDB findes a reviewer according to the conditions (line one), make an update according to line two.
                 // بالعربي
                 // بالشروط هاي reviewer لو لقيت 
-                // { name: this.reviewerData.name, _user_id: null }
+                // { name: this.reviewerData.name, _user_id: null } => _user_id=null المقصد من هذا السطر انو لو ال
                 // اعمل التعديل التالي
                 // { $set: { _user_id: this.reviewerData._user_id, name: this.reviewerData._user_id } }
                 cb({
