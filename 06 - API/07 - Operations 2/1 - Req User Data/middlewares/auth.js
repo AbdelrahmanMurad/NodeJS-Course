@@ -2,16 +2,6 @@ const jwt = require('jsonwebtoken')
 const createHttpError = require('http-errors')
 const { readFileSync } = require('fs')
 
-/**Steps:
- * 1) request: get Token from the Header Authorization.
- * 2) check if there is Token.
- * 3) split the token from Bearer word.
- * 4) decode operation{
- *      a) verifying that token is authorized. => [verify(token, secretKey)]
- *      b) store user id & reviewer id in the request.
- * }
- */
-
 module.exports = (req, res, next) => {
     //1) request: get Token from the Header Authorization.
     const authHeader = req.get('Authorization');
@@ -23,11 +13,6 @@ module.exports = (req, res, next) => {
 
     //3) split the token from Bearer word.
     const token = authHeader.split(' ')[1];
-    /**
-     * Bearer           (TokenCode)
-     * [0]     split        [1]
-     */
-    // Bearer used for Authentication Token, there is another types of Tokens not for Authentication.
 
     //4) decode operation
     //first we need the secretKey to access the token.
@@ -44,7 +29,3 @@ module.exports = (req, res, next) => {
         return next(createHttpError(401));
     }
 }
-
-// now i have a problem that i cant make this middleware global in all application. because it will make it global at all requests (all project).
-// and this middleware is just for Token.
-// solution is in index.js (middlewares)

@@ -1,5 +1,6 @@
 const bookRouter = require('./books');
 const authRouter = require('./auth');
+const reviewRouter = require('./review');
 
 module.exports = (app) => {
 
@@ -16,4 +17,7 @@ module.exports = (app) => {
 
     //auth => prefix
     app.use('/auth', authRouter)
+
+    //review => prefix
+    app.use('/reviews', reviewRouter)
 }
