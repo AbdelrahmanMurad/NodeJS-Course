@@ -36,6 +36,7 @@ module.exports = (req, res, next) => {
         //a) verifying that token is authorized. => [verify(token, secretKey)]
         //verify(token, secretKey) => output: payload (user data)
         const decode = jwt.verify(token, secretKey)
+        // if verified, add on the request that will come, _user_id & _reviewer_id.
         //b) store user id & reviewer id in the request.
         req._user_id = decode._id;
         req._reviewer_id = decode._reviewer_id;
