@@ -30,7 +30,7 @@ module.exports = (req, res, next) => {
     // Bearer used for Authentication Token, there is another types of Tokens not for Authentication.
 
     //4) decode operation
-    //we need the secretKey to access the token.
+    //first we need the secretKey to access the token.
     const secretKey = readFileSync('./configurations/private.key');
     try {
         //a) verifying that token is authorized. => [verify(token, secretKey)]
@@ -45,6 +45,6 @@ module.exports = (req, res, next) => {
     }
 }
 
-// now i have a problem that i cant make this middleware global in all application. because it will make it global at all requests.
+// now i have a problem that i cant make this middleware global in all application. because it will make it global at all requests (all project).
 // and this middleware is just for Token.
 // solution is in index.js (middlewares)
