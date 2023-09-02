@@ -1,0 +1,14 @@
+Delete: https://youtu.be/yiA21qBvE-0?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H
+
+- delete for review, then we need to refresh the rating for book.
+- لانها كلمة محجوزة Deleteب Fnيفضل عدم تسمية ال
+- remove اذا نسمي 
+- idالحذف والتحديث تعتمد على ال
+
+
+
+--- Review.js (models)
+    review.js (controllers)
+    review.js (routes)
+
+    controllerفيستقبلها ال request يحتاج الى ارسال  controllerله modelلاحظ ان اي 
