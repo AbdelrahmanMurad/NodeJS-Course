@@ -2,7 +2,7 @@ const { dbConnection } = require('../configurations')
 
 class Book {
 
-    //why static?? because we will not use the data in this class
+    // static => will not use object => data
     static refreshAvgRating(_book_id) {
         //reviews collection to calculate the avg of rates.
         dbConnection('reviews', async (collection) => {
