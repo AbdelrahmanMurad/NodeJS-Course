@@ -1,1 +1,17 @@
 Aggregated Data: https://youtu.be/PkrSjFAQX-k?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H
+
+
+Aggregated Data: داتا تجميعية - معلومات مجمعة
+    - Aggregated Data مجموعة حقول معينة تم جمعها او ضربها لعمل داتا جديدة واللي هي ما تسمى ب
+    - documents داتا تحسب من عدة 
+    - Aggregate data is a summary of raw data collected from multiple sources or measures.
+    - It is used for statistical analysis, public reporting, or revealing insights that are not visible in individual data points.
+    - Data aggregation can be done manually or by using automated tools that apply aggregation functions.
+    - Examples of aggregate data are yearly revenue, average cost-per-click, monthly organic visits, or pharmaceutical trial results.
+    - Aggregate data can help compare information, identify trends, or make decisions based on data-driven evidence.
+    - However, aggregate data may also have limitations, such as losing details, masking outliers, or creating biases.
+
+في مشروعنا: بدنا نعمل متوسط تقييمات الكتاب
+    - Ratingالشغل بعتمد على ال
+        - Book.js (Models) - index.js
+        - review.js (controllers)
