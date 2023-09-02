@@ -11,6 +11,8 @@ Aggregated Data: داتا تجميعية - معلومات مجمعة
     - Aggregate data can help compare information, identify trends, or make decisions based on data-driven evidence.
     - However, aggregate data may also have limitations, such as losing details, masking outliers, or creating biases.
 
+
+- idالحذف والتحديث تعتمد على ال
 في مشروعنا: بدنا نعمل متوسط تقييمات الكتاب
     - Ratingالشغل بعتمد على ال
         - Book.js (Models) - index.js
