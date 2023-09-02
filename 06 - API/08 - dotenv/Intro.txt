@@ -1,0 +1,27 @@
+dotenv: https://youtu.be/2YZrYO5d1EM?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H
+
+- environment variables (dotenvs).
+    - environment variables: environment variablesلها علاقة بال codeداتا مستخدمة داخل ال
+        - examples: server port, connection string, decode, encode.
+        - used in every framework.
+
+- what is dotenv used for??
+    - its used for Environment variables.
+    - a dotenv is used to store “environment variables” AKA(Also Known As) variables we need to configure our code
+        environment. This can include information like is our project running in “production” mode
+        or “developer” mode but most importantly, API and database keys.
+    - These are local variables that are made available to an application. Creating these variables is made easy
+        with a tool like dotenv. This module loads environment variables from a.env file that you create and adds
+        them to the process.env object that is made available to the application.
+    - Dotenv is a simple way to allow you to create secret keys that your application needs to function and keep them from going public.
+
+
+- npm i dotenv
+  - in the parent folder of the project, make a file named .env => add something you dont want to push it on public (github). (like: secret key)
+  - key= value
+  - Uppercase is better to use.
+  - No spaces
+  - Single Line
+  - .env needs to be globaly. How??
+    - in the main file (index.js in our project)
+        - require('dotenv').config()
