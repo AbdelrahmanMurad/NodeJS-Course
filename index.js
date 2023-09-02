@@ -1,5 +1,6 @@
-const { opendir } = require('fs');
+require('dotenv').config()
 
+const { opendir } = require('fs');
 
 console.log('nodemon is succesfuly, but you cant use nodemon in this course because of the folders:');
 
