@@ -1,0 +1,24 @@
+API Dev. Standards - JSON Response: https://youtu.be/4usskAt5COE?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H
+
+- APIالمشكلة التي نتحدث عنها انو لما نرجع من ال
+ json response
+ بنرجعها بشكل مختلف وليس شكل موحد
+ يعني مرة بتكون
+ status فيها object
+ status, message فيها object
+ data ومرات من دون data فيها object
+ وهكذا user, reviewer, dataومرات الداتا بكون الها اسماء مختلفة متل ال
+
+- موحد json response المفترض انو يكون 
+- شو الحل؟؟
+- local module
+- من انشائك json response 
+- app.js <= global <= moduleلكل ملف، الصح انو اعمل ال import بدلا من انو اعمل 
+
+
+
+--- index.js (modules)
+    app.js
+    review.js (controllers)
+    auth.js (controllers)
+    books.js (controllers)
