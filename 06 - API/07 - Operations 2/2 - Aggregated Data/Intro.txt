@@ -3,7 +3,7 @@ Aggregated Data: https://youtu.be/PkrSjFAQX-k?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQp
 
 Aggregated Data: داتا تجميعية - معلومات مجمعة
     - Aggregated Data مجموعة حقول معينة تم جمعها او ضربها لعمل داتا جديدة واللي هي ما تسمى ب
-    - documents داتا تحسب من عدة 
+    - documents(rows) داتا تحسب من عدة 
     - Aggregate data is a summary of raw data collected from multiple sources or measures.
     - It is used for statistical analysis, public reporting, or revealing insights that are not visible in individual data points.
     - Data aggregation can be done manually or by using automated tools that apply aggregation functions.

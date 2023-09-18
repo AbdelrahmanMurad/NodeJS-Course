@@ -1,7 +1,7 @@
 Req User Data: https://youtu.be/IQpApRdSt6Y?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H
 
 - New Thing:
-    - we need to make the reviewer to add, modify and delete a review on some book.
+    - we need to make the reviewer to add, aggregate and delete a review on some book.
     - Stop reading and think what does this need??
         .
         .
@@ -11,7 +11,7 @@ Req User Data: https://youtu.be/IQpApRdSt6Y?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3
         .
         - its database operation. so the work is on model.
         - and, its data about the reviewer. 
-        - we will make 3 fns add - modify - delete.
+        - we will make 3 fns add(+modify) - aggregate - delete.
         - all this fns in one file called review.
     - So, First thing:
         - Review.js (models) - index.js

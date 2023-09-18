@@ -38,7 +38,7 @@ const signup = (req, res, next) => {
             //500 internal server error => tryCatch جاي من 
         });
 
-    //مدام في اخطاء احفظ اليوزر
+    //مدام فش اخطاء احفظ اليوزر
     //save 
     user.save();
 

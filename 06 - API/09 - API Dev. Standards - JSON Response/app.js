@@ -51,5 +51,4 @@ app.use((error, req, res, next) => {
     return returnJson(res, error.statusCode, false, error.message, null)
 });
 
-
 module.exports = app;

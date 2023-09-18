@@ -10,6 +10,7 @@ const { readFileSync } = require('fs')
  *      a) verifying that token is authorized. => [verify(token, secretKey)]
  *      b) store user id & reviewer id in the request.
  * }
+ * get - check - split - decode
  */
 
 module.exports = (req, res, next) => {

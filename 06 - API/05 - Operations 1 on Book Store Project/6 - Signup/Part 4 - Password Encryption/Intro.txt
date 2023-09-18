@@ -8,13 +8,12 @@ Password Encryption: https://youtu.be/1ORsdB3Dy-Y?list=PLE5Mq0Nw_Flr1kMDtWmQYmAf
 - One Way Incryption: فش اي طريقة لفك التشفير تاعها حتى الخوارزميات ما بتشفر
 - Two Way Incryption: في طريقة للتشفير
 
-- من قوى الخوارزميات bcrypt algorithm احنا حنستخدم ال
+- من اقوى الخوارزميات bcrypt algorithm احنا حنستخدم ال
 - npm i bcryptjs
 - hash method from bcrypt. 
     - hash is async, we need to use it in save() function.
     - we will face a problem that the line of inserting data will be sync. 
     - so you need to handle it, or use hashSync. :)
-
 
 
 --- User.js

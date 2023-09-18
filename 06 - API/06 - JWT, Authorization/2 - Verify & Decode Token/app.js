@@ -16,6 +16,7 @@ process.on('unhandledRejection', (reason) => {
 /**
  * Middlewares
  */
+//**
 //this is how to access to the global middleware.
 middlewares.global(app);
 //the auth middleware is in books.js (routes) => Example.

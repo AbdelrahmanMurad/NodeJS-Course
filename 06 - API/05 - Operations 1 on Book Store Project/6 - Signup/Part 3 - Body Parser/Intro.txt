@@ -11,3 +11,5 @@ JSONاللي حتصلك نوعها requestsانو ال expressلازم افهم 
  - types: json, form-data, www-urn-encoded, ...etc
  - in middleware
  - Body Parser بقدر اعرف اكثر من 
+
+ --- index.js (middleware)

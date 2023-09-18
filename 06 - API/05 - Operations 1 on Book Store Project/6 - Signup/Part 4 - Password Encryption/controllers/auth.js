@@ -1,5 +1,5 @@
 const { User } = require('../models');
-const  createHttpError  = require('http-errors');
+const createHttpError  = require('http-errors');
 
 const signup = async (req, res, next) => {
     const userData = req.body;

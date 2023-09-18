@@ -39,7 +39,7 @@ class Reviewer {
                     { $set: { _user_id: this.reviewerData._user_id, name: this.reviewerData.name } }, // (line two)
                     { upsert: true } // (line three)
                 )
-                //line one: if (conditions)
+                //line one: if (conditions) 
                 //line two: then
                 //line three: start
                 //{ upsert: true } => means => if the compiler or the mongoDB findes a reviewer according to the conditions (line one), make an update according to line two.

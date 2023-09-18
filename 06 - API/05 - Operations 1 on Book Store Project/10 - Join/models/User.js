@@ -13,16 +13,6 @@ class User {
             try {
                 const hashedPassword = hashSync(this.userData.password);
                 this.userData.password = hashedPassword;
-                /*Part-1: Docs Relation
-                    await collection.insertOne(this.userData);
-                    // const newUser = collection.findOne({ name: this.userData.name }) //or any of this (email, username, pass)
-                    const newUser = collection.findOne({ email: this.userData.email })
-                    cb({
-                        status: true,
-                        _user_id: newUser._id
-                        //من الداتابيز نفسها _idهيك انت جبت ال
-                    });
-                */
                 //part-2: Docs Relation
                 //insertOne return promise
                 await collection.insertOne(this.userData)
@@ -98,57 +88,48 @@ class User {
                     code: 400
                 })
             }
-            /*Part 1: Join - (1) => fetch user, then fetch reviewer. (independently بشكل مستقل)
-                dbConnection('users', async (collection) => {
-                    try {
-                            const user = await collection.findOne(
-                                 { username: loginData.username }
-                                // { projection: { username: 1, password: 1 } }
-                            )
-                            //JOIN
-                            if (user) {
-                                if (compareSync(loginData.password, user.password)) {
-                                    dbConnection('reviewers', async (relatedCollection) => {
-                                        const reviewer = await relatedCollection.findOne(
-                                            { _user_id: user._id }
-                                            //condition
-                                        )
-                                        if (reviewer) {
-                                            // return user.reviewer = reviewer; => wrong
-                                            user.reviewer = reviewer; // => we are not returning here. => the return will make the request in hold (request sending) 
-                                            // put the reviewer data in user data.
-                                        }
-                                        resolve({
-                                            status: true,
-                                            data: user
-                                        })
-                                    })
-                                    //التانية dbConnectionداخل ال resolveلاحظ انو نقلنا ال
-                                } else {
-                                    resolve({
-                                        status: false,
-                                        message: 'Login Failed',
-                                        code: 401
-                                    })
-                                }
-                            } else {
-                                resolve({
-                                    status: false,
-                                    message: 'Login Failed',
-                                    code: 401
-                                })
-                            }
-                    } catch (error) {
-                        reject({
-                            status: false,
-                            message: error.message
-                        })
-                    }
-                })
-            */
-            //part 2: Join - (2) => make a connect from mongoDB between two collections. (aggregation تجميع => array of objects)
             dbConnection('users', async (collection) => {
                 try {
+                    /*Part 1: Join - (1) => fetch user, then fetch reviewer. (independently بشكل مستقل)
+                    const user = await collection.findOne(
+                        { username: loginData.username }
+                        // { projection: { username: 1, password: 1 } }
+                    )
+                    //JOIN
+                    if (user) {
+                        if (compareSync(loginData.password, user.password)) {
+                            dbConnection('reviewers', async (relatedCollection) => {
+                                const reviewer = await relatedCollection.findOne(
+                                    { _user_id: user._id }
+                                    //condition
+                                )
+                                if (reviewer) {
+                                    // return user.reviewer = reviewer; => wrong
+                                    user.reviewer = reviewer; // => we are not returning here. => the return will make the request in hold (request sending) 
+                                    // put the reviewer data in user data.
+                                }
+                                resolve({
+                                    status: true,
+                                    data: user
+                                })
+                            })
+                            //التانية dbConnectionداخل ال resolveلاحظ انو نقلنا ال
+                        } else {
+                            resolve({
+                                status: false,
+                                message: 'Login Failed',
+                                code: 401
+                            })
+                        }
+                    } else {
+                        resolve({
+                            status: false,
+                            message: 'Login Failed',
+                            code: 401
+                        })
+                    }
+                    */
+                    //part 2: Join - (2) => make a connect from mongoDB between two collections. (aggregation تجميع => array of objects)
                     //aggregate([]) => output is array of objects => merging the data we need between two collections.
                     const dbResult = await collection.aggregate([
                         {
@@ -175,7 +156,7 @@ class User {
                     ]).toArray()
 
                     if (dbResult) {
-                        /** The problem in aggregate method:  
+                        /** The problems in aggregate method:  
                          *      1- findOne()وليس ال find()انها تتعامل مع الداتا مثل ال 
                          *          - المطلوب فقط userمش ال usersهيك هي بتجيب كل ال 
                          *          - Solution: Add Condition => match object, you can add limit of users too. (match & limit objects)
@@ -183,7 +164,6 @@ class User {
                          *          - Solution: select the first object in the array to each collections, so the output will be (object) not (array of objects).
                          *          -                  const user = dbResult[0];
                          *          -                  user.reviewer = (user.reviewer) ? user.reviewer[0] : null
-
                          */
                         //first user (first object)
                         const user = dbResult[0];
@@ -197,8 +177,8 @@ class User {
 
                         //first reviewer (first object)
                         user.reviewer = (user.reviewer) ? user.reviewer[0] : null
-                        // if (user.reviewer) { user.reviewer = user.reviewer[0] } else { user.reviewer = null }
                         // if user.reviewer exist
+                        // if (user.reviewer) { user.reviewer = user.reviewer[0] } else { user.reviewer = null }
                         resolve({
                             status: true,
                             data: user
@@ -208,7 +188,6 @@ class User {
                             status: false
                         })
                     }
-
                 } catch (error) {
                     reject({
                         status: false,
@@ -216,6 +195,8 @@ class User {
                     })
                 }
             })
+
+
         })
     }
 }

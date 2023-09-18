@@ -1,6 +1,5 @@
 const { dbConnection } = require('../configurations');
 
-
 class Reviewer {
 
     constructor(reviewerData) {
@@ -17,7 +16,7 @@ class Reviewer {
             } catch (error) {
                 cb({
                     status: false,
-                    message: 'error.message'
+                    message: error.message
                 })
             }
         })

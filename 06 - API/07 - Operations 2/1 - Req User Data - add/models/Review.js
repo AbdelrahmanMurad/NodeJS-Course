@@ -1,7 +1,7 @@
 const { dbConnection } = require('../configurations')
 const { reviewVali } = require("../validators");
 
-/**4 rows:
+/**4 documents (rows):
  * 1- book id
  * 2- reviewer id
  * 3- rating
@@ -15,7 +15,7 @@ class Review {
     save(cb) {
         dbConnection('reviews', async (collection) => {
             try {
-                //checking if there are _book_id & _reviewer_id by upsert operation.
+                //checking if there are _book_id & _reviewer_id by upsert operation ([1- condition] [2- then] [3- do it or dont]).
                 await collection.updateOne(
                     {
                         _book_id: this.reviewData._book_id,

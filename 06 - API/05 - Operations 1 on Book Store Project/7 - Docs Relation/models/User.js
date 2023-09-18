@@ -21,7 +21,7 @@ class User {
                     cb({
                         status: true,
                         _user_id: newUser._id
-                        //من الداتابيز نفسها _idهيك انت جبت ال
+                        //من المونجو داتابيز نفسها _idهيك انت جبت ال
                     });
                 */
                 //part-2: Docs Relation
@@ -31,8 +31,8 @@ class User {
                         cb({
                             status: true,
                             _user_id: result.insertedId
-                            //من الداتابيز نفسها _idهيك انت جبت ال
-                        });
+                        //من المونجو داتابيز نفسها _idهيك انت جبت ال
+                    });
                     })
             } catch (error) {
                 cb({

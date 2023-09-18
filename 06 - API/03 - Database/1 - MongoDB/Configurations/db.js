@@ -67,46 +67,56 @@ const dbConnection = (collection, cb) => {
 dbConnection('users', async (db) => {
     const user = await db.findOne();
     console.log(user);
+    // console.log('aaa');
 });
 
 module.exports = dbConnection;
 
- /** db.js file 
- * 
- * 1- reuiring MongoClient Fn from Mongodb Library.
- *  ===> const { MongoClient } = require('mongodb');
- * 
- * ================================================================ 
- * 2- Connection String (global || local)
- *      => const _uri = "mongodb+srv://Murado:Murado@cluster0.lip3lu6.mongodb.net/nodejs_project?retryWrites=true&w=majority";
- *      => const _uri = "mongodb://localhost:27017"
- * 
- * ================================================================
- * 3- dbConnection = (collection, cb) => {
- *              /- MongoClient usage:
- *               -      MongoClient.connect()
- *               -                  .then()
- *               -                  .catch()
- *               -/  
- *      MongoClient.connect(_uri)
- *      .then(async (client) => {
- *              /- client usage:
- *               -      client.db().collectioon()
- *               -      client.close()
- *               -/   
- *      await cb(client.db('nameOfDatabaseOfCollections').collection(collection));
- *      client.close();
- *      })
- *      .catch(()=>{})
- *   }
- * 
- * ================================================================
- * 4- Test Connection
- *  dbConnection('nameOfCollection', async (db)=>{
- *      const name = await db.findOne();
- *      console.log(name);
- *  })
- * 
- * ================================================================
- * nameOfDatabaseOfCollections != nameOfCollection
- */
+/** db.js file
+* 
+* 1- reuiring MongoClient Fn from Mongodb Library.
+*  ===> const { MongoClient } = require('mongodb');
+* 
+* ================================================================ 
+* 2- Connection String (global || local)
+*      => const _uri = "mongodb+srv://Murado:Murado@cluster0.lip3lu6.mongodb.net/nodejs_project?retryWrites=true&w=majority";
+*      => const _uri = "mongodb://localhost:27017"
+* 
+* ================================================================
+* 3- dbConnection = (collection, cb) => {
+*              /- MongoClient usage:
+*               -      MongoClient.connect()
+*               -                  .then()
+*               -                  .catch()
+*               -/  
+*      MongoClient.connect(_uri)
+*      .then(async (client) => {
+*              /- client usage:
+*               -      client.db().collectioon()
+*               -      client.close()
+*               -/   
+*      await cb(client.db('nameOfDatabaseOfCollections').collection(collection));
+*      client.close();
+*      })
+*      .catch(()=>{})
+*   }
+* /--like this
+*  3- dbConnection = (collection, cb) => {
+*      MongoClient.connect(_uri)
+*            .then(async (client) => { 
+*                   await cb(client.db('nameOfDatabaseOfCollections').collection(collection));
+*                   client.close();
+*            })
+*            .catch(()=>{})
+*   }
+* 
+* ================================================================
+* 4- Test Connection
+*  dbConnection('nameOfCollection', async (db)=>{
+*      const name = await db.findOne();
+*      console.log(name);
+*  })
+* 
+* ================================================================
+* nameOfDatabaseOfCollections != nameOfCollection
+*/

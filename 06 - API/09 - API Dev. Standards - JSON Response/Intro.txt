@@ -17,7 +17,7 @@ API Dev. Standards - JSON Response: https://youtu.be/4usskAt5COE?list=PLE5Mq0Nw_
 
 
 
---- index.js (modules)
+--- index.js (modules) not (models)
     app.js
     review.js (controllers)
     auth.js (controllers)

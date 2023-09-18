@@ -51,16 +51,16 @@ const login = async (req, res, next) => {
     User.login(req.body)
         .then((result) => {
             if (result.status) {
+                //**
                 //to make the key secret.
-                const jwtSecretKey = readFileSync('./configurations/private.key');
+                const jwtSecretKey = readFileSync('./configurations/private.key');//.env is better
                 //'readFileSync' get out from the file automatically, this is consider one (.) => then (./configurations/private.key)
                 //sign({payload}, secretKey) => generate Token
                 const token = jwt.sign(
                     {
-                        _id: result.data._id, 
+                        _id: result.data._id,
                         _reviewer_id: result.data.reviewer._id
-                    }, jwtSecretKey
-                );
+                    }, jwtSecretKey );
                 res.status(200).json({
                     status: true,
                     token: token

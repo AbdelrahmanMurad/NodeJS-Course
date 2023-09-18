@@ -48,7 +48,7 @@ class Review {
 
     // لانها كلمة محجوزة deleteب Fnيفضل عدم تسمية ال
     // remove اذا نسمي 
-    // static => will not use object => reviewData
+    // static => why ?? => will not use object => we will use data
     static remove(_id, cb) {
         dbConnection('reviews', async (collection) => {
             try {
@@ -66,7 +66,8 @@ class Review {
         })
     }
 
-    // static => will not use object => reviewData
+    //getOne for remove (find/search first then remove)
+    // static => why ?? => will not use object => we will use data
     static getOne(_id) {
         return new Promise((resolve, reject) => {
             dbConnection('reviews', async (collection) => {

@@ -8,9 +8,9 @@ Join - (2): https://youtu.be/UC2JWp-8GeQ?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H
         - هاتو Reviewerلو لقيت ال
         - لو ما لقيتوش جيب اليوزر من دون الريفيوور
     - in mongoDB, How??
-        1) mongoDB is NoSQL => no relations => fetch user, then fetch reviewer. (independently بشكل مستقل)
+      Way1) mongoDB is NoSQL => no relations => fetch user, then fetch reviewer. (independently بشكل مستقل)
 
-        2) make a connect from mongoDB between two collections. (aggregation تجميع)
+      Way2) make a connect from mongoDB between two collections. (aggregation تجميع)
 
 
 --- User.js (Models)

@@ -12,7 +12,7 @@ npm i jsonwebtoken
 - Generate Token وهاي اسمها العملية Token يعني لازم ارجع  
 - Loginوهاي العملية بتصير في ال
 - userبنرجع ال Loginلانو في ال
-- Generate Token means Encode Token.
+- Generate Token means Encode Token. => تشفير Token
 
 
 --- auth.js (controller)

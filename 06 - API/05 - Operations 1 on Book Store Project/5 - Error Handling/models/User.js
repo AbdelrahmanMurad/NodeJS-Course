@@ -17,7 +17,7 @@ class User {
                 status: false,
                 error: err.message
             }
-        };
+        }
         return { status: true }
     }
 

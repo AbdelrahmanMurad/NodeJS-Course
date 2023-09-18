@@ -1,4 +1,4 @@
-const { Review, Book } = require('../models')
+const { Review } = require('../models')
 const createError = require('http-errors')
 const { ObjectId } = require("bson");
 /**Steps:

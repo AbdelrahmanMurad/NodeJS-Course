@@ -1,4 +1,3 @@
-const { ValidationError } = require('@hapi/joi/lib/errors');
 const { dbConnection } = require('../configurations');
 const { userVali, loginVali } = require('../validators');
 const { hashSync, compareSync } = require('bcryptjs');
@@ -89,6 +88,11 @@ class User {
     }
 
     static login(loginData) {
+        /**
+         * 1- validation
+         * 2- dbConnection
+         * 3- compare between passwords
+         */
         return new Promise((resolve, reject) => {
 
             //validation for login => user.js (validators)
@@ -105,36 +109,36 @@ class User {
             //dbConnection
             dbConnection('users', async (collection) => {
                 try {
-
                     const user = await collection.findOne(
                         { username: loginData.username },
-                        // password: loginData.password
+                        // password: loginData.password //=> wrong
                         // we cant use password, because its stored in mongoDB encrypted.
                         { projection: { username: 1, password: 1 } }
                         //Selecting what you want to return from the data.
                         // 1 => true, 0 => false
                         // if you dont want to return the id => _id: 0 
+                        //so, username & password from db will be sent.
                     )
 
                     //if user account exists, compare between encrypted password & decrypted password.
                     if (user) {
+                        // if (compareSync(loginData.password, user.password) == true) {
                         if (compareSync(loginData.password, user.password)) {
-                            //loginData.password => decrypted
-                            //user.password => encrypted (in mongoDB)
+                            //loginData.password => decrypted غير مشفرة
+                            //user.password => encrypted (in mongoDB) مشفرة
                             resolve({
                                 status: true,
                                 data: user
                             })
                         }
+                    } else {
+                        // we can use reject, but reject is for exception. and this is not an exception.
+                        resolve({
+                            status: false,
+                            message: 'Login Failed',
+                            code: 401
+                        })
                     }
-
-                    // we can use reject, but reject is for exception. and this is not an exception.
-                    resolve({
-                        status: false,
-                        message: 'Login Failed',
-                        code: 401
-                    })
-
                 } catch (error) {
                     reject({
                         status: false,
@@ -151,8 +155,8 @@ class User {
     // try()catch() for handling
     // ؟؟  login() functionكيف حنستخدم ال
     // auth controller <= req,res,next 
-    // auth controller has signup() & login().
-    // auth routes for making a route.
+    // auth controller: has signup() & login().
+    // auth routes: for making a route.
 }
 
 module.exports = User;
