@@ -11,7 +11,7 @@ const stores = require('../data/stores.json');
 const cities = require('../data/cities.json');
 
 //async processes
-
+    
 /* another code
 const getProductByName = (name) => {
     return new Promise((resolve, reject) => {

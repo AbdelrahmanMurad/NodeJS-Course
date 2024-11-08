@@ -1,4 +1,6 @@
-//Todo: define an object
+/**
+ * - Initialize an object.
+ */
 const car = {
     brand: "BMW",
     model: "X5",

@@ -96,4 +96,5 @@ getProductByName(productName)
  * 1- Promise means => fn().then().catch()
  * 2- Promise chain is better.
  * 3- In case Promise Hell: Fill out the catch first, So you don't get confused.
+ * 4- Async/Await to the rescue.
  */

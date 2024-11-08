@@ -7,7 +7,7 @@
  * - There is 2 Types Of Operations: Blocking vs Non-Blocking.
  * -- Blocking => Syncغالبا تتنفذ في ال
  * --- If there is a hold or problem in a line of the code, the program\compiler will stop executing, until it solve it.
- * --- يعني من الاخر البرنامج بوقف مدة معينة من الزمن (Syncronus متزامن)
+ * --- يعني من الاخر البرنامج بوقف مدة معينة من الزمن   (Syncronus متزامن)
  * -- Non-Blocking => Async ما بتوقف تنفيذ البرنامج اي انه 
 */
 

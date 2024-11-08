@@ -1,87 +1,81 @@
-/**Introduction
-    Async
-  - Async Before Function Mean This Function Return A Promise 
-  - Async And Await Help In Creating Asynchronous Promise Behavior With Cleaner Style
+/** Introduction to Async and Await
+ *
+ * Async:
+ * - Adding the `async` keyword before a function means this function returns a promise.
+ * - `async` and `await` help create asynchronous promise behavior with a cleaner and more readable style.
+ *
+ * Await:
+ * - `await` only works inside `async` functions.
+ * - `await` makes JavaScript wait for the promise's result.
+ * - `await` provides a more elegant way to handle promises without using `.then()`.
+ *
+ * Using Async & Await with Try, Catch, Finally:
+ * - Offers a way to handle errors and finalize processes in an elegant manner.
+ */
 
-    Await
-  - Await Works Only Inside Asnyc Functions
-  - Await Make JavaScript Wait For The Promise Result
-  - Await Is More Elegant Syntax Of Getting Promise Result
-  - Also, Avoid .then()
-  More Elegant اكثر اناقة
+/** Patterns to Handle Async Processes:
+ * 1. Callback (spying).
+ * 2. Promise to solve the callback hell problem.
+ * 3. Async/Await for cleaner and more readable asynchronous code.
+ */
 
-    Async & Await With Try, Catch, Finally
+// Example of a callback function:
+const getUSDataCallback = (cb) => {
+    const response = fetch('<https://datausa.io/api/data?drilldowns=Nation&measures=Population>');
 
-//-------------------------------------------------------
-
-we took 2 patterns to handle the async process:
-    1- Callback. (spying)
-    2- Promise To Solve The Callback-Hell.
-    3- Async/Await To Create Asynchronous Promise Behavior With Cleaner Style. (More Elegant)
-
- *callback
-const getUSData = (cb) => {
-    const response = fetch('https://datausa.io/api/data?drilldowns=Nation&measures=Population');
-
-    // error case
+    // Error case:
     if (response.status !== 200) {
-        err = 'cannot fetch the data';
+        const err = 'Cannot fetch the data';
         cb(err);
     }
 
-    const json = response.json()
+    const json = response.json();
     cb(json);
-}
+};
 
-*promise
-const getUSData = () => {
+// Example of a promise:
+const getUSDataPromise = () => {
     return new Promise((resolve, reject) => {
-        const response = fetch('https://datausa.io/api/data?drilldowns=Nation&measures=Population');
-        // error case
+        const response = fetch('<https://datausa.io/api/data?drilldowns=Nation&measures=Population>');
+
+        // Error case:
         if (response.status !== 200) {
-            err = 'cannot fetch the data';
+            const err = 'Cannot fetch the data';
             reject(err);
         }
-        const json = response.json()
+
+        const json = response.json();
         resolve(json);
     });
-}
-*/
-//-------------------------------------------------------
-/** Async/Await - How Does It Work ?
- * 1- Add the word async before the fn() starts. (Async Function)
- * 2- Async code inside Async Function => WRONG.
- * 3- Sync code inside Async Function => Write.
- * 4- So the Block Function of Async Function is Sync. (Block)
- * 5- How to convert Async code to sync? By adding the word await before the line of code starts.
- * 6- So the wrords await: convert the non-block(async) to block(sync).
- * 7- Also you're forced to add await before json() function, Why??.
- *    - Because in js the json() is async. 
- *    - But in logical, its sync.
- * 8- Async Function returns object promise. => fn().then().catch()
- * 9- promise is intermediary between async & sync.
- */
-const getUSData = async () => {
-    // const response = fetch(); // => async 
-    // const response = await fetch(); // => sync
-    const response = await fetch('https://datausa.io/api/data?drilldowns=Nation&measures=Population'); // I/O
+};
 
-    // error case
+/** How Async/Await Works:
+ * 1. Add the `async` keyword before a function declaration to make it an async function.
+ * 2. Async code inside an async function is incorrect; only sync code should be written directly.
+ * 3. The block inside an async function is synchronous by default.
+ * 4. To convert async code to sync, add `await` before async function calls.
+ * 5. The `await` keyword ensures that JavaScript waits for the promise to resolve.
+ * 6. `json()` is async in JavaScript, but logically it is considered sync.
+ * 7. An `async` function returns a promise, allowing `.then()` and `.catch()` to be used.
+ * 8. Promises act as intermediaries between async and sync code.
+ */
+
+// Example using async/await:
+const getUSData = async () => {
+    // Fetch API request (I/O operation):
+    const response = await fetch('<https://datausa.io/api/data?drilldowns=Nation&measures=Population>');
+
+    // Handle error case:
     if (response.status !== 200) {
-        throw new Error('cannot fetch the data');
-        // return err; => wrong, why ? to make a differece between the return json and the return error.
+        throw new Error('Cannot fetch the data');
     }
 
+    // Wait for and parse JSON response:
     const json = await response.json();
-    // console.log(json);
     return json;
-}
-// run
-/**
- * you cant take the data from the async function to a variable. like:
- * const data = getUSData(); //=> sync
- * this is wrong. 
-*/
+};
+
+// Running the async function:
 getUSData()
     .then(data => console.log(data))
     .catch(err => console.log(err));

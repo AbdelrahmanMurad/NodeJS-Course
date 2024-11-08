@@ -1,5 +1,5 @@
 /**
- * Todo: 3 method to define a string: single quotes, double quotes, and backticks
+ * - 3 Methods to initialize a string: single quotes, double quotes, and backticks
  */
 
 const firstName = 'Ahmed';
@@ -23,7 +23,7 @@ console.log(`This is for ${firstName} ${midName}, family is ${lastName}`);
 
 // multi-line text
 
-const story = "This is my success story\nHow I be success one\nin this world";
+const story = "This is my success story\nHow to be success one\nin this world";
 
 // or using backticks
 const song = `Hi to my world

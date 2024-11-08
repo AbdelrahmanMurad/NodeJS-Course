@@ -1,4 +1,4 @@
-//Todo: define empty array
+//- Define empty array
 let arr = [];
 // or non empty array
 arr = [5, 4];

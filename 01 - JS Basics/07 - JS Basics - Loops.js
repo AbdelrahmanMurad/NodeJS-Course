@@ -7,4 +7,5 @@ for (i = 0; i < len; i++) {
 console.log('--------------------------------');
 arr.forEach(element => {
     console.log(element);
-})
+}
+)

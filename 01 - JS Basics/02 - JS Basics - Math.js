@@ -1,5 +1,5 @@
 /**
- * Todo: math operators are * / + - %
+ * - Math operators are * / + - %
  */
 
 const num1 = 5;
