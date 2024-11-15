@@ -1,7 +1,7 @@
 Lectures(28-30)
 
 - What's Node.js? 
-   1- Node.js is a JavaScript framework built on Chrome's V8 JavaScript engine. 
+   1- Node.js is a JavaScript framework built on Chrome's V8 JavaScript engine.     
              (its not a framework, but you need to stick with this mistaken information for the teacher)
    2- Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. 
    3- Node.js package ecosystem, npm, is the largest ecosystem of open source libraries in the world.
