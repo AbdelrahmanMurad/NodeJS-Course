@@ -7,17 +7,3 @@
 7- Anyone can create package.
 8- Anyone can modify a package with consent of its owners.
 9- cmd,terminalيكون من خلال ال npmالتعامل مع ال
-
-What is web? 
-Before the web, the internet existed as a collection of interconnected networks used primarily for research,
- academic, and military purposes. People could connect to these networks through terminal-based applications 
- and protocols, such as Telnet and FTP, to access and share information. 
-After the creation of the web, the internet transformed into a more user-friendly and accessible platform,
- allowing people to easily access and share information using web browsers and standardized protocols such as 
- HTTP (Hypertext Transfer Protocol) and TCP/IP (Transmission Control Protocol/Internet Protocol). 
-The web revolutionized the way we interact with information and with each other, enabling us to communicate, 
- conduct business, and access information more easily and quickly.
-The web also gave rise to new technologies and innovations such as social media, e-commerce, and cloud computing, 
- which have transformed our lives in numerous ways. 
-The web continues to evolve, with advancements in technologies such as artificial intelligence, virtual reality,
- and the Internet of Things (IoT), promising to reshape the way we interact with the digital world.

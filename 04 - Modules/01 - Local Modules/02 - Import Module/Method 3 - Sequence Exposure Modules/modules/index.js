@@ -1,19 +1,18 @@
 /** old way
+
+// import first
 const sum = require('./sum');
 const multiply = require('./multiply')
 
+// then export them as a single object
 module.exports = {
     sum,
     multiply
 }
 */
 
-//or 1 & 2
+//or export and import in the same time
 module.exports = {
-    //1
-    sum: require('./math/sum'),
-    multiply: require('./math/multiply')
-    //2 (without importing)
-    // sum: (a,b)=>a+b,
-    // multiply: (a,b)=>a*b
+  sum: require("./math/sum"),
+  multiply: require("./math/multiply"),
 };
