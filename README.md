@@ -12,3 +12,4 @@ This course was taught at the Islamic University of Gaza (IUG) about node.js by 
 5. Web & Web Development
 6. API
 
+Note: Connectiong to db here is old pattern, its better to use mongoose.
