@@ -40,7 +40,7 @@ const getBooksPageCount = (req, res, next) => {
 const getBookById = (req, res, next) => {
     // const _id = req.params.id;
     //we need same datatype => ObjectId
-    // npm i bson
+    // npm i bson => [binaryJson]
     // import ObjectId from bson => const { ObjectId } = require('bson');
     const _id = new ObjectId(req.params.id);
 

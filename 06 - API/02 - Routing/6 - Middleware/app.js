@@ -9,7 +9,6 @@ const courses = [
 ];
 
 /**
- 
 app.get('/courses', (req, res, next) => {
 
     //precondition
@@ -54,12 +53,12 @@ app.use('/courses', (req, res, next) => {
 
 // الترتيب مهم جدا جدا جدا
 
-//fixed one first
+//fixed route first
 app.get('/courses', (req, res, next) => {
     res.status(200).json(courses);
 });
 
-//changeable
+//dynamic route second
 app.get('/courses/:id', (req, res, next) => {
     const id = req.params.id;
     const course = courses.find(course => course.id == id);
@@ -70,4 +69,4 @@ app.get('/', (req, res, next) => {
     res.redirect('/courses');
 })
 
-module.exports = app; 
+module.exports = app;

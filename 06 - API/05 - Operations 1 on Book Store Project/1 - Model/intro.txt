@@ -1,6 +1,6 @@
 Model: https://youtu.be/acbGSDSr3EA?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H
 
-MVC:
+MVC Example:
 - Model: Entitie => class-student, class-teacher, class-course.
 - View: User Interface - UI
 - Controller: Operations
@@ -24,7 +24,7 @@ Steps:
         - name of file start with uppercase: User.js.
         - Why?? Because it will be a class.
         - name of class is name of file. (coding standard عادات برمجية)  
-            1. class name{}
+            1. class Name{}
             2. constructor(){}
             3. variables inside constructor().
             4. Make an object for the class.

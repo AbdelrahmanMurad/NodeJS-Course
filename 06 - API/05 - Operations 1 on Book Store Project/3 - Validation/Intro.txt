@@ -20,5 +20,5 @@ validation is for login and register ...etc (account things)
             - read the "static review" file.
 
 
---- validators floder
+--- validators folder
     - User.js

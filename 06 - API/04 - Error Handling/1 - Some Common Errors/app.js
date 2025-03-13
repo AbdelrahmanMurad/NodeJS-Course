@@ -11,7 +11,7 @@ const app = express();
 process.on('unhandledRejection', (reason) => {
     console.log(reason);
     process.exit(1);
-    // num!=0 => Prpcess is done with Fail.
+    // num!=0 => Process is done with Fail.
     // 0 => Prpcess is done with Success.
 });
 

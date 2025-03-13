@@ -1,11 +1,11 @@
 Body Parser:  https://youtu.be/vc2ISXc6CXA?list=PLE5Mq0Nw_Flr1kMDtWmQYmAfURQpH3r8H
 
-- Body-parser is a middleware that parses the body of an HTTP request and exposes it on req.body. 
+- Body-parser is a middleware that parses the body of an HTTP request and exposes it on req.body.
     It can handle different types of data, such as JSON, URL-encoded, text, etc.
 - However, body-parser is deprecated in newer versions of Express, 
     and you can use express.json() and express.urlencoded() instead.
 
-requestsالا لما اعرف "شدة على العين" نوع ال requestsما بيعرف ال expressال
+requestsالا لما اعرف "شدة على الراء" نوع ال requestsما بيعرف ال expressال
 JSONاللي حتصلك نوعها requestsانو ال expressلازم افهم "شدة على الهاء" ال
 
  - types: json, form-data, www-urn-encoded, ...etc

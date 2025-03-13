@@ -19,10 +19,9 @@ server.listen(port, () => console.log(`server ${port} is running now`));
  4- server.listen
  */
 
-
 // old way
 // http
-// const http = require('http'); 
+// const http = require('http');
 // // http.createServer
 // const server = http.createServer((req, res) => res.end('start server'));
 // // server.listen

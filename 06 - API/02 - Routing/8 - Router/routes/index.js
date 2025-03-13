@@ -21,7 +21,7 @@ module.exports = (app) => {
         res.redirect('/courses');
     })
 
-    //routes group = Router
+    // routes group = Router
     app.use('/student', studentRouter);
     // const studentRouter = require('./students');
     // '/students' => prefix
@@ -32,7 +32,7 @@ module.exports = (app) => {
     Note
  ===============================================
     // routes group = Router
-    // Router الى مجموعات من باب التنظيم Routesفصل ال
+    // Router: الى مجموعات من باب التنظيم Routesفصل ال
     app.get('/student/profile');//one route
     app.get('/student/grades');//one route
     app.get('/student/timetable');//one route
